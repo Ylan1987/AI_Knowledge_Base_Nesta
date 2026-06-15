@@ -1,0 +1,37 @@
+# Archivos de configuración locales y secretos
+.env
+gcloud_credentials.json
+
+# Bases de datos locales
+*.db
+*.sqlite3
+agent_state.db
+nesta_dispatcher.log
+chroma_db_clean/
+chroma_db/
+
+# Python cache y binarios
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Entornos virtuales
+venv/
+env/
+.env_folder/
+.venv/
+
+# IDE y Sistema Operativo
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs y Debug
+*.log
+debug_input_ia.txt
+debug_*.txt
+
+# Archivos irrelevantes de proyectos anteriores
+Conocimientos previos fuera de odoo/

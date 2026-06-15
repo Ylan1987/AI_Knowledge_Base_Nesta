@@ -1,0 +1,11 @@
+services:
+  nesta-ai:
+    container_name: nesta_ai_dispatcher
+    build: /share/Public/NestaAI
+    restart: always
+    volumes:
+      # Mapeamos solo la carpeta de la app, las credenciales ya están en la imagen
+      - /share/Public/NestaAI:/app
+    environment:
+      - TZ=America/Montevideo
+      - PYTHONPATH=/app

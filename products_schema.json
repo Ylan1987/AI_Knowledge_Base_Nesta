@@ -1,0 +1,4379 @@
+{
+    "Acciones": {
+        "variables_formulario": {
+            "Tiempo de entrega": {
+                "celda": "E4",
+                "valor_ejemplo": "2 Días"
+            },
+            "Tamaño Cerrado": {
+                "celda": "E6",
+                "valor_ejemplo": "21x35"
+            },
+            "Cantidad de tìtulos": {
+                "celda": "E8",
+                "valor_ejemplo": "2000.0"
+            },
+            "Papel": {
+                "celda": "E10",
+                "valor_ejemplo": "Obra 180gr"
+            },
+            "Impresión": {
+                "celda": "E12",
+                "valor_ejemplo": "Full Color"
+            },
+            "Faces": {
+                "celda": "E14",
+                "valor_ejemplo": "Simple"
+            },
+            "Encuadernado": {
+                "celda": "E16",
+                "valor_ejemplo": "Engrapado de izquierda con contratapa de cartulina y tapa obra 80gr envolvente sin imprimir"
+            },
+            "Orientación": {
+                "celda": "E18",
+                "valor_ejemplo": "Horizontal"
+            },
+            "Puntillado": {
+                "celda": "E20",
+                "valor_ejemplo": "Si"
+            },
+            "Nombre de la sociedad": {
+                "celda": "E22",
+                "valor_ejemplo": "None"
+            },
+            "Capital autorizado": {
+                "celda": "E24",
+                "valor_ejemplo": "None"
+            },
+            "Nùmero de Ley": {
+                "celda": "E26",
+                "valor_ejemplo": "None"
+            },
+            "Fecha de registro de las acciones": {
+                "celda": "E28",
+                "valor_ejemplo": "None"
+            },
+            "Nùmero de registro de las acciones": {
+                "celda": "E30",
+                "valor_ejemplo": "None"
+            },
+            "Fecha de emisiòn de las acciones": {
+                "celda": "E32",
+                "valor_ejemplo": "None"
+            },
+            "Cantidad de tìtulos iguales": {
+                "celda": "E48",
+                "valor_ejemplo": "20.0"
+            },
+            "Cantidad de acciones por tìtulo": {
+                "celda": "E38",
+                "valor_ejemplo": "50.0"
+            },
+            "Valor de la acciòn por tìtulo": {
+                "celda": "E40",
+                "valor_ejemplo": "150.0"
+            },
+            "Nombre manual": {
+                "celda": "E42",
+                "valor_ejemplo": "Maual"
+            },
+            "Nombres": {
+                "celda": "E44",
+                "valor_ejemplo": "Juan, Castro, Miguel"
+            }
+        },
+        "opciones_base": {
+            "Borde encuadernado": [
+                "Corto"
+            ],
+            "Orientación": [
+                "Horizontal"
+            ],
+            "Cantidad de tìtulos": [
+                "5.0",
+                "10.0",
+                "20.0",
+                "30.0",
+                "50.0",
+                "100.0"
+            ],
+            "Tiempo de entrega": [
+                "2 días",
+                "7 días"
+            ],
+            "Tipo de papel": [
+                "Obra 180gr"
+            ],
+            "Tamaño (cm)": [
+                "21x35"
+            ],
+            "Tintas": [
+                "Full Color"
+            ]
+        },
+        "reglas_logicas": {}
+    },
+    "Acreditaciones": {
+        "variables_formulario": {
+            "Orientación": {
+                "celda": "E4",
+                "valor_ejemplo": "Horizontal"
+            },
+            "Tamaño Cerrado": {
+                "celda": "E6",
+                "valor_ejemplo": "7.7X9.5"
+            },
+            "Cantidad (de cada uno)": {
+                "celda": "E8",
+                "valor_ejemplo": "150.0"
+            },
+            "Cantidad diferentes": {
+                "celda": "E10",
+                "valor_ejemplo": "1.0"
+            },
+            "Papel": {
+                "celda": "E12",
+                "valor_ejemplo": "Coteado 350gr."
+            },
+            "Color del papel": {
+                "celda": "E14",
+                "valor_ejemplo": "Blanco"
+            },
+            "Entrega": {
+                "celda": "E16",
+                "valor_ejemplo": "3 días"
+            },
+            "Comentarios": {
+                "celda": "E18",
+                "valor_ejemplo": "None"
+            },
+            "Contraencolado": {
+                "celda": "E20",
+                "valor_ejemplo": "No"
+            },
+            "Impresión": {
+                "celda": "E22",
+                "valor_ejemplo": "Full Color CMYK"
+            },
+            "Faces": {
+                "celda": "E24",
+                "valor_ejemplo": "Simple"
+            },
+            "Laminado": {
+                "celda": "E28",
+                "valor_ejemplo": "No"
+            },
+            "Tinta Blanca": {
+                "celda": "E30",
+                "valor_ejemplo": "No"
+            },
+            "Barniz": {
+                "celda": "E32",
+                "valor_ejemplo": "No"
+            },
+            "Troquelado": {
+                "celda": "E34",
+                "valor_ejemplo": "No"
+            },
+            "Redondeado": {
+                "celda": "E36",
+                "valor_ejemplo": "No"
+            },
+            "Superior Derecha": {
+                "celda": "E38",
+                "valor_ejemplo": "No"
+            },
+            "Superior Izquierda": {
+                "celda": "E40",
+                "valor_ejemplo": "No"
+            },
+            "Inferior Derecha": {
+                "celda": "E42",
+                "valor_ejemplo": "No"
+            },
+            "Inferior Izquierda": {
+                "celda": "E44",
+                "valor_ejemplo": "No"
+            },
+            "Plastificado": {
+                "celda": "E46",
+                "valor_ejemplo": "No"
+            },
+            "Perforación": {
+                "celda": "E48",
+                "valor_ejemplo": "No"
+            }
+        },
+        "opciones_base": {
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Tamaño (cm)": [
+                "60x100",
+                "100x170"
+            ],
+            "Tipo de papel": [
+                "Coteado 350gr.",
+                "Coteado 300gr.",
+                "Cartulina 250gr.",
+                "Opalina 240gr.",
+                "Reciclado 240gr.",
+                "Obra 210gr.",
+                "Opalina telada 240gr.",
+                "Cartulina Magic Color Textuara 180gr."
+            ],
+            "Color del papel": [
+                "Blanco",
+                "Amarillo",
+                "Aceituna",
+                "Arena",
+                "Azul",
+                "Celeste",
+                "Crema",
+                "Lila"
+            ],
+            "Tiempo de entrega": [
+                "3 días",
+                "10 días"
+            ],
+            "Tintas": [
+                "Tinta Negra fondo blanco sin grisados",
+                "Tinta Negra",
+                "Full Color CMYK"
+            ],
+            "Tinta Blanca": [
+                "Simple Faz",
+                "Doble Faz",
+                "No"
+            ],
+            "Faz": [
+                "Simple",
+                "Doble"
+            ],
+            "Barniz": [
+                "UV Sectorizado SF",
+                "UV Sectorizado DF",
+                "No"
+            ],
+            "Laminado": [
+                "Mate Simple Faz",
+                "Mate Doble Faz",
+                "Brillo Simple Faz",
+                "Brillo Doble Faz",
+                "No"
+            ],
+            "Contraencolado": [
+                "Si",
+                "No"
+            ],
+            "Troquelado": [
+                "Troquelado Dificultad Baja",
+                "Troquelado Dificultad Media",
+                "Troquelado Dificultad Alta",
+                "No"
+            ],
+            "Redondeado de puntas": [
+                "Todas",
+                "Algunas",
+                "No"
+            ],
+            "Superior Derecha": [
+                "Si",
+                "No"
+            ],
+            "Superior Izquierda": [
+                "Si",
+                "No"
+            ],
+            "Inferior Derecha": [
+                "Si",
+                "No"
+            ]
+        },
+        "reglas_logicas": {
+            "Redondeado de puntas": "=IF(Formulario!E16=\"3 Días\",D16,'Caracteristicas producto'!B16:D16)",
+            "Superior Derecha": "=IF(Formulario!$E$36=\"Algunas\",'Caracteristicas producto'!B17:C17,IF(Formulario!$E$36=\"Todas\",'Caracteristicas producto'!B17,'Caracteristicas producto'!C17))",
+            "Superior Izquierda": "=+IF(Formulario!$E$36=\"Algunas\",'Caracteristicas producto'!B18:C18,IF(Formulario!$E$36=\"Todas\",'Caracteristicas producto'!B18,'Caracteristicas producto'!C18))",
+            "Inferior Derecha": "=+IF(Formulario!$E$36=\"Algunas\",'Caracteristicas producto'!B19:C19,IF(Formulario!$E$36=\"Todas\",'Caracteristicas producto'!B19,'Caracteristicas producto'!C19))",
+            "Inferior Izquierda": "=+IF(Formulario!$E$36=\"Algunas\",'Caracteristicas producto'!B20:C20,IF(Formulario!$E$36=\"Todas\",'Caracteristicas producto'!B20,'Caracteristicas producto'!C20))",
+            "Barniz": "=IFERROR(__xludf.DUMMYFUNCTION(\"ARRAYFORMULA(IF(Formulario!E16=\"\"3 Días\"\",D12,IF(Formulario!E24=\"\"Simple\"\",Split(TEXTJOIN(\"\",\"\",TRUE,FILTER(B12:D12,ISNUMBER(FIND(\"\"SF\"\",B12:D12))),D12),\"\",\"\"),Split(TEXTJOIN(\"\",\"\",TRUE,FILTER(B12:D12,ISNUMBER(FIND(\"\"DF\"\",B12:D12))),D12),\"\",\"\"))))\"),\"No\")",
+            "Tinta Blanca": "=IF(Formulario!E16=\"3 Días\",D8,IF(Formulario!E24=\"Simple\",IF(COUNTIF({F5,I5,J5,M5,N5,O5,P5,T5,U5},Formulario!E14)>0,B8,{B8,D8}),IF(COUNTIF({F5,I5,J5,M5,N5,O5,P5,T5,U5},Formulario!E14)>0,C8,{C8,D8})))",
+            "Laminado": "=IFERROR(__xludf.DUMMYFUNCTION(\"ARRAYFORMULA(IF(Formulario!$E$24=\"\"Doble\"\",Split(TEXTJOIN(\"\",\"\",TRUE,FILTER(B13:E13,ISNUMBER(FIND(\"\"Doble\"\",B13:E13))),F13),\"\",\"\"),B13:F13))\"),\"Mate Simple Faz\")",
+            "Tamaño": "=B3:C3",
+            "Contraencolado": "=IF(Formulario!E16=\"3 Días\",C14,'Caracteristicas producto'!B14:C14)",
+            "Color del papel": "=IF(Formulario!E12=\"Cartulina Magic Color Textuara 180gr.\",C5:U5,B5)",
+            "Impresion": "=IF(Formulario!E30<>\"No\",D7,B7:D7)",
+            "Plastificado": "=IF(OR(Formulario!E28<>\"No\",Formulario!E32<>\"No\"),C21,B21:C21)",
+            "Perforación": "=IF(Formulario!E34<>\"No\",B22,B22:E22)"
+        }
+    },
+    "Agendas": {
+        "variables_formulario": {
+            "Tipo": {
+                "celda": "E26",
+                "valor_ejemplo": "Super Dura"
+            },
+            "Tiempo de entrega": {
+                "celda": "E6",
+                "valor_ejemplo": "12 Días"
+            },
+            "Orientación": {
+                "celda": "E8",
+                "valor_ejemplo": "Vertical"
+            },
+            "Borde de encuadernado": {
+                "celda": "E10",
+                "valor_ejemplo": "Largo"
+            },
+            "Tamaño Cerrado": {
+                "celda": "E12",
+                "valor_ejemplo": "150x210"
+            },
+            "Tamaño Abierto": {
+                "celda": "E14",
+                "valor_ejemplo": "=IF(E10=\"Corto\",CONCATENATE(MAX($M$31,$M$32)*2,\"x\",MIN($M$31,$M$32)),CONCATENATE(MIN($M$31,$M$32)*2,\"x\",MAX($M$31,$M$32)))"
+            },
+            "Cantidad": {
+                "celda": "E16",
+                "valor_ejemplo": "50.0"
+            },
+            "Cantidad diferentes": {
+                "celda": "E18",
+                "valor_ejemplo": "1.0"
+            },
+            "Encuadernado": {
+                "celda": "E20",
+                "valor_ejemplo": "Con Rulo negro"
+            },
+            "Comentarios": {
+                "celda": "E22",
+                "valor_ejemplo": "None"
+            },
+            "Impresión de tapa y contratapa": {
+                "celda": "E28",
+                "valor_ejemplo": "Tinta Negra"
+            },
+            "Impresión de retiros": {
+                "celda": "E30",
+                "valor_ejemplo": "No"
+            },
+            "Papel": {
+                "celda": "E32",
+                "valor_ejemplo": "Coteado 130gr."
+            },
+            "Faces Retiro": {
+                "celda": "E34",
+                "valor_ejemplo": "N/C"
+            },
+            "Tinta Blanca": {
+                "celda": "E36",
+                "valor_ejemplo": "No"
+            },
+            "Laminado": {
+                "celda": "E38",
+                "valor_ejemplo": "Mate Solo tapa y contratapa"
+            },
+            "Barniz": {
+                "celda": "E40",
+                "valor_ejemplo": "No"
+            },
+            "Troquelado": {
+                "celda": "E42",
+                "valor_ejemplo": "No"
+            },
+            "¿Hay troquel?": {
+                "celda": "E44",
+                "valor_ejemplo": "None"
+            },
+            "Sobre Doble": {
+                "celda": "E48",
+                "valor_ejemplo": "Si"
+            }
+        },
+        "opciones_base": {
+            "Tipo": [
+                "Agenda"
+            ],
+            "Tiempo de Entrega": [
+                "7 Días",
+                "12 Días"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Borde de encuadernado": [
+                "Largo",
+                "Corto"
+            ],
+            "Tamaño Cerrado(cm)": [
+                "150x210",
+                "165x220",
+                "220x280",
+                "210x300"
+            ],
+            "Encuadernado": [
+                "Con Rulo blanco",
+                "Con Rulo negro",
+                "Con lomo cuadrado"
+            ],
+            "Sobre Doble": [
+                "Si",
+                "No"
+            ],
+            "Solapa": [
+                "Blanca pegada en la tapa",
+                "Blanca pegada en la contratapa",
+                "Impresa pegada en la tapa",
+                "Impresa pegada en la contratapa",
+                "No"
+            ],
+            "Cierre Elástico": [
+                "5mm Blanco",
+                "5mm Negro",
+                "Especial",
+                "No"
+            ],
+            "Elástico para lapicera": [
+                "5mm Blanco",
+                "5mm Negro",
+                "Especial",
+                "No"
+            ],
+            "Marcapáginas": [
+                "Blanco",
+                "Negro",
+                "Especial",
+                "No"
+            ],
+            "Hoja de Stickers full color": [
+                "No",
+                "1.0",
+                "2.0",
+                "3.0",
+                "4.0",
+                "5.0",
+                "6.0",
+                "7.0"
+            ],
+            "Dificultad del troquel del sticker": [
+                "Baja",
+                "Media",
+                "Alta",
+                "No"
+            ],
+            "Solapa con Cierre Velcro": [
+                "Blanco",
+                "Negro",
+                "Especial",
+                "No"
+            ]
+        },
+        "reglas_logicas": {}
+    },
+    "Blocs": {
+        "variables_formulario": {
+            "Tipo": {
+                "celda": "E26",
+                "valor_ejemplo": "Flexible"
+            },
+            "Tiempo de entrega": {
+                "celda": "E6",
+                "valor_ejemplo": "7 Días"
+            },
+            "Orientación": {
+                "celda": "E8",
+                "valor_ejemplo": "Vertical"
+            },
+            "Borde de encuadernado": {
+                "celda": "E10",
+                "valor_ejemplo": "Corto"
+            },
+            "Tamaño Cerrado": {
+                "celda": "E12",
+                "valor_ejemplo": "105x170"
+            },
+            "Tamaño Abierto": {
+                "celda": "E14",
+                "valor_ejemplo": "=CONCATENATE(N31,\"x\",N32)"
+            },
+            "Cantidad": {
+                "celda": "E16",
+                "valor_ejemplo": "None"
+            },
+            "Cantidad diferentes": {
+                "celda": "E18",
+                "valor_ejemplo": "None"
+            },
+            "Encuadernado": {
+                "celda": "E20",
+                "valor_ejemplo": "Encolado"
+            },
+            "Comentarios": {
+                "celda": "E22",
+                "valor_ejemplo": "None"
+            },
+            "Impresión de tapa": {
+                "celda": "E28",
+                "valor_ejemplo": "Full Color CMYK"
+            },
+            "Impresión de contra tapa": {
+                "celda": "E30",
+                "valor_ejemplo": "Si"
+            },
+            "Impresión de retiros": {
+                "celda": "E32",
+                "valor_ejemplo": "No"
+            },
+            "Papel": {
+                "celda": "E48",
+                "valor_ejemplo": "Obra 90gr."
+            },
+            "Color del papel": {
+                "celda": "E36",
+                "valor_ejemplo": "Blanco"
+            },
+            "Faces Retiro": {
+                "celda": "E38",
+                "valor_ejemplo": "no"
+            },
+            "Tinta Blanca": {
+                "celda": "E40",
+                "valor_ejemplo": "no"
+            },
+            "Laminado": {
+                "celda": "E42",
+                "valor_ejemplo": "No"
+            },
+            "Barniz": {
+                "celda": "E44",
+                "valor_ejemplo": "no"
+            }
+        },
+        "opciones_base": {
+            "Tipo": [
+                "Flexible",
+                "Dura",
+                "Super Dura"
+            ],
+            "Tiempo de Entrega": [
+                "7 Días",
+                "12 Días"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Borde de encuadernado": [
+                "Largo",
+                "Corto"
+            ],
+            "Tamaño Cerrado(cm)": [
+                "105x150",
+                "105x170",
+                "155x225",
+                "220x300",
+                "300x450"
+            ],
+            "Encuadernado": [
+                "Encolado",
+                "Encolado con tapa envolvente",
+                "Dos grapas tipo libreta",
+                "Dos grapas tipo libreta con tapa envolvente",
+                "Con Rulo blanco",
+                "Con Rulo negro",
+                "Con lomo cuadrado"
+            ],
+            "Tipo de papel": [
+                "Coteado 350gr.",
+                "Coteado 300gr.",
+                "Coteado 200gr.",
+                "Cartulina 250gr.",
+                "Cartulina 270gr.",
+                "Reciclado 240gr.",
+                "Coteado 130gr.",
+                "Coteado 150gr."
+            ],
+            "Color del papel": [
+                "Blanco",
+                "Celeste",
+                "Amarillo",
+                "Rosado",
+                "Verde"
+            ],
+            "Impresión de tapa": [
+                "Tinta Negra fondo blanco sin grisados",
+                "Tinta Negra",
+                "Tinta color lata",
+                "Tinta color pantone",
+                "Dos tintas de lata",
+                "Dos tintas Pantone",
+                "1 Tinta Lata y 1 Pantone",
+                "Full Color CMYK"
+            ],
+            "Impresión de contra tapa": [
+                "Si",
+                "No"
+            ],
+            "Impresión de retiros": [
+                "Si",
+                "No"
+            ],
+            "Faces de Retiro": [
+                "N/C",
+                "Simple",
+                "Doble"
+            ],
+            "Tinta Blanca": [
+                "Solo tapa",
+                "Tapa y contratapa",
+                "Tapas y Retiros",
+                "No"
+            ]
+        },
+        "reglas_logicas": {
+            "Borde de encuadernado": "=IF(Formulario!E8=\"Horizontal\",B5,C5)",
+            "Tamaño": "=IF(Formulario!E4=\"Blocs de notas\",C6:E6,IF(Formulario!E4=\"Recetarios\",B6:D6,IF(Formulario!E4=\"Blocs Planificadores\",D6:F6)))",
+            "Encuadernado": "=IF(Formulario!E4=\"Blocs de notas\",B7:H7,IF(OR(Formulario!E4=\"Recetarios\",Formulario!E4=\"Blocs Planificadores\"),B7:C7))",
+            "Tipo": "=IF(OR(ISNUMBER(FIND(\"Dos grapas\",Formulario!E20)),ISNUMBER(FIND(\"Encolado\",Formulario!E20))),B10,IF(Formulario!E20=\"Con lomo cuadrado\",{B10,D10},B10:D10))",
+            "Impresión de tapa": "=IF(OR(Formulario!E6=\"7 Días\",(IF(Formulario!O31<>\"\",Formulario!N31+Formulario!O31,Formulario!N31*2))/1000*Formulario!N32/1000*Formulario!E16<15),IF(Formulario!E20=\"Con lomo cuadrado\",{B13:C13 , I13},{B13:C13 , I13,K13}),IF(Formulario!E20=\"Con lomo cuadrado\",B13:J13,B13:K13))",
+            "Impresión de contratapa": "=IF(Formulario!E28=\"Sin Imprimir\",C14,IF(OR(Formulario!E20=\"Con Rulo blanco\",Formulario!E20=\"Con Rulo negro\",Formulario!E20=\"Con lomo cuadrado\"),B14,B14:C14))",
+            "Papel": "=IF(Formulario!E26=\"Flexible\",IF(ISNUMBER(FIND(Formulario!E20,\"Envolvente\")),B11:K11,IF(OR(Formulario!E20=\"Encolado\",Formulario!E20=\"Dos grapas tipo libreta\"),B11:K11,B11:G11)),IF(Formulario!E26=\"Dura\",E11:G11,H11))",
+            "Color del papel": "=IF(Formulario!E34=\"Obra Color 60gr.\",C12:F12,B12)"
+        }
+    },
+    "Bono donación o rifas": {
+        "variables_formulario": {
+            "Tipo": {
+                "celda": "E4",
+                "valor_ejemplo": "Rifa"
+            },
+            "Tiempo de entrega": {
+                "celda": "E6",
+                "valor_ejemplo": "7 Días"
+            },
+            "Tamaño Cerrado": {
+                "celda": "E8",
+                "valor_ejemplo": "235x120"
+            },
+            "Cantidad": {
+                "celda": "E10",
+                "valor_ejemplo": "6000.0"
+            },
+            "Papel": {
+                "celda": "E12",
+                "valor_ejemplo": "Obra de 100 grs"
+            },
+            "Impresión": {
+                "celda": "E14",
+                "valor_ejemplo": "Full Color CMYK"
+            },
+            "Faces": {
+                "celda": "E16",
+                "valor_ejemplo": "Simple"
+            },
+            "Encuadernado": {
+                "celda": "E18",
+                "valor_ejemplo": "Cosido con 2 grapas y Emblocado de izquierda"
+            },
+            "Orientación": {
+                "celda": "E20",
+                "valor_ejemplo": "Horizontal"
+            },
+            "Puntillado": {
+                "celda": "E22",
+                "valor_ejemplo": "1.0"
+            },
+            "Aclaración puntillado": {
+                "celda": "E24",
+                "valor_ejemplo": "Izquierda"
+            },
+            "Serie (Opcional)": {
+                "celda": "E26",
+                "valor_ejemplo": "None"
+            },
+            "Numeración inicial (Opcional)": {
+                "celda": "E28",
+                "valor_ejemplo": "1.0"
+            },
+            "Numeración final (Opcional)": {
+                "celda": "E30",
+                "valor_ejemplo": "6000.0"
+            },
+            "Comentarios": {
+                "celda": "E32",
+                "valor_ejemplo": "None"
+            },
+            "Empresa": {
+                "celda": "E36",
+                "valor_ejemplo": "None"
+            },
+            "Contacto": {
+                "celda": "E38",
+                "valor_ejemplo": "None"
+            },
+            "Mail": {
+                "celda": "E40",
+                "valor_ejemplo": "None"
+            },
+            "Teléfono": {
+                "celda": "E42",
+                "valor_ejemplo": "None"
+            }
+        },
+        "opciones_base": {
+            "Tiempo de Entrega": [
+                "3 Días",
+                "7 Días"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Tamaño Cerrado(cm)": [
+                "69x100",
+                "69x150",
+                "69x200",
+                "100x200",
+                "230x320"
+            ],
+            "Encuadernado": [
+                "Emblocado de izquierda",
+                "Cosido con 2 grapas y Emblocado de izquierda",
+                "Hojas Sueltas"
+            ],
+            "Tipo": [
+                "Bono Donación",
+                "Rifa"
+            ],
+            "Papel": [
+                "Obra 80gr.",
+                "Obra 90gr.",
+                "Obra 120gr.",
+                "Obra 210gr.",
+                "Coteado 300gr.",
+                "Coteado 130gr.",
+                "Coteado 200gr."
+            ],
+            "Impresión": [
+                "Tinta Negra fondo blanco sin grisados",
+                "Tinta Negra",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro) fondo blanco sin grisados",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro)",
+                "Tinta color lata fondo blanco sin grisados",
+                "Tinta color lata",
+                "Tinta color pantone fondo blanco sin grisados",
+                "Tinta color pantone"
+            ],
+            "Faces": [
+                "Simple",
+                "Doble"
+            ],
+            "Puntillado": [
+                "No",
+                "1.0",
+                "2.0",
+                "3.0",
+                "4.0",
+                "5.0",
+                "6.0",
+                "7.0"
+            ]
+        },
+        "reglas_logicas": {
+            "Papel": "=B10:H10",
+            "Impresión": "=IF(OR(Formulario!E6=\"7 Días\",(IF(Formulario!O39<>\"\",Formulario!N39+Formulario!O39,Formulario!N39*2))/1000*Formulario!N40/1000*Formulario!E10<15),{B11:C11 , Q11},B11:R11)",
+            "Puntillado": "=IF(AND(min(Formulario!M39:M40)>=230,max(Formulario!M39:M40)>=320),B15:N15,IF(AND(min(Formulario!M39:M40)>=100,max(Formulario!M39:M40)>=200),B15:D15,IF(AND(min(Formulario!M39:M40)>=69,max(Formulario!M39:M40)>=200),B15:C15,B15)))",
+            "Aclaración puntillado": "=IF(Formulario!E22<>\"No\",\"\",\"N/C\")"
+        }
+    },
+    "Calendarios de bolsillo y con Imán": {
+        "variables_formulario": {
+            "Tipo Trabajo": {
+                "celda": "E4",
+                "valor_ejemplo": "Calendario de Bolsillo"
+            },
+            "Orientación": {
+                "celda": "E6",
+                "valor_ejemplo": "Vertical"
+            },
+            "Tamaño Cerrado": {
+                "celda": "E8",
+                "valor_ejemplo": "104x55"
+            },
+            "Cantidad (de cada uno)": {
+                "celda": "E10",
+                "valor_ejemplo": "4000.0"
+            },
+            "Cantidad diferentes": {
+                "celda": "E12",
+                "valor_ejemplo": "2.0"
+            },
+            "Papel": {
+                "celda": "E14",
+                "valor_ejemplo": "Coteado 300gr."
+            },
+            "Color del papel": {
+                "celda": "E16",
+                "valor_ejemplo": "Blanco"
+            },
+            "Comentarios": {
+                "celda": "E18",
+                "valor_ejemplo": "None"
+            },
+            "Impresión": {
+                "celda": "E20",
+                "valor_ejemplo": "Tinta Negra"
+            },
+            "Faces": {
+                "celda": "E22",
+                "valor_ejemplo": "Doble"
+            },
+            "Laminado": {
+                "celda": "E24",
+                "valor_ejemplo": "No"
+            },
+            "Contraencolado": {
+                "celda": "E26",
+                "valor_ejemplo": "No"
+            },
+            "Tinta Blanca": {
+                "celda": "E28",
+                "valor_ejemplo": "No"
+            },
+            "Barniz": {
+                "celda": "E30",
+                "valor_ejemplo": "No"
+            },
+            "Troquelado": {
+                "celda": "E32",
+                "valor_ejemplo": "No"
+            },
+            "Redondeado": {
+                "celda": "E34",
+                "valor_ejemplo": "Algunas"
+            },
+            "Superior Derecha": {
+                "celda": "E36",
+                "valor_ejemplo": "Si"
+            },
+            "Superior Izquierda": {
+                "celda": "E38",
+                "valor_ejemplo": "No"
+            },
+            "Inferior Derecha": {
+                "celda": "E40",
+                "valor_ejemplo": "Si"
+            },
+            "Inferior Izquierda": {
+                "celda": "E42",
+                "valor_ejemplo": "Si"
+            }
+        },
+        "opciones_base": {
+            "Tipo de trabajo": [
+                "Calendario de Bolsillo",
+                "Calendario de Imán entero",
+                "Calendario con Imán atrás"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Tamaño (cm)": [
+                "90x54",
+                "90x50",
+                "85x50",
+                "80x55",
+                "85x60",
+                "104x55",
+                "110x155",
+                "155x170"
+            ],
+            "Tipo de papel": [
+                "Coteado 350gr.",
+                "Coteado 300gr.",
+                "Cartulina 250gr.",
+                "Opalina 240gr.",
+                "Reciclado 240gr.",
+                "Obra 210gr.",
+                "Opalina telada 240gr.",
+                "Cartulina Magic Color Textuara 180gr."
+            ],
+            "Color del papel": [
+                "Blanco",
+                "Amarillo",
+                "Aceituna",
+                "Arena",
+                "Azul",
+                "Celeste",
+                "Crema",
+                "Lila"
+            ],
+            "Tiempo de entrega": [
+                "3 días",
+                "10 días"
+            ],
+            "Tintas": [
+                "Tinta Negra fondo blanco sin grisados",
+                "Tinta Negra",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro) fondo blanco sin grisados",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro)",
+                "Tinta color lata fondo blanco sin grisados",
+                "Tinta color lata",
+                "Tinta color pantone fondo blanco sin grisados",
+                "Tinta color pantone"
+            ],
+            "Tinta Blanca": [
+                "Simple Faz",
+                "Doble Faz",
+                "No"
+            ],
+            "Faz": [
+                "Simple",
+                "Doble"
+            ],
+            "Barniz": [
+                "Barniz de máquina Mate SF",
+                "Barniz de máquina Mate DF",
+                "Barniz de máquina Brillo SF",
+                "Barniz de máquina Brillo DF",
+                "UV pleno SF",
+                "UV pleno DF",
+                "UV Sectorizado SF",
+                "UV Sectorizado DF"
+            ],
+            "Laminado": [
+                "Mate Simple Faz",
+                "Mate Doble Faz",
+                "Brillo Simple Faz",
+                "Brillo Doble Faz",
+                "No"
+            ],
+            "Contraencolado": [
+                "Si",
+                "No"
+            ],
+            "Troquelado": [
+                "Troquelado Dificultad Baja",
+                "Troquelado Dificultad Media",
+                "Troquelado Dificultad Alta",
+                "No"
+            ],
+            "Ya hay troquel": [
+                "Si",
+                "No"
+            ],
+            "Redondeado de puntas": [
+                "Todas",
+                "Algunas",
+                "No"
+            ],
+            "Superior Derecha": [
+                "Si",
+                "No"
+            ]
+        },
+        "reglas_logicas": {
+            "Material": "=if(Formulario!E4=C2,\"N/C\",B5:O5)",
+            "Color del papel": "=IF(Formulario!E14=\"Cartulina Magic Color Textuara 180gr.\",C6:U6,if(Formulario!E14=\"N/C\",\"N/C\",B6))",
+            "Impresion": "=B8:V8",
+            "Faz": "=if(or(Formulario!E4=C2,Formulario!E4=D2),B10,B10:O10)",
+            "Tinta Blanca": "=if(Formulario!E22=B10,{B9,D9},B9:H9)",
+            "Barniz": "=IFERROR(__xludf.DUMMYFUNCTION(\"if(Formulario!E22=B10,filter(B13:S13,arrayformula((arrayformula(iferror(SEARCH(\"\" SF\"\",B13:S13)>0,false))+arrayformula(iferror(SEARCH(\"\"NO\"\",B13:S13)>0,false)))>0)),{B13:S13})\"),\"Barniz de máquina Mate SF\")",
+            "Laminado": "=IFERROR(__xludf.DUMMYFUNCTION(\"if(Formulario!E22=B10,filter(B14:S14,arrayformula((arrayformula(iferror(SEARCH(\"\" Simple Faz\"\",B14:S14)>0,false))+arrayformula(iferror(SEARCH(\"\"No\"\",B14:S14)>0,false)))>0)),{B14:S14})\"),\"Mate Simple Faz\")",
+            "Contraencolado": "=if(or(Formulario!E4=B2,Formulario!E4=D2),B15:G15,C15)",
+            "Redondeado de puntas": "='Caracteristicas producto'!B18:D18",
+            "Superior Derecha": "=IF(Formulario!$E$34=\"Algunas\",'Caracteristicas producto'!B19:C19,IF(Formulario!$E$34=\"Todas\",'Caracteristicas producto'!B19,'Caracteristicas producto'!C19))",
+            "Superior Izquierda": "=+IF(Formulario!$E$34=\"Algunas\",'Caracteristicas producto'!B20:C20,IF(Formulario!$E$34=\"Todas\",'Caracteristicas producto'!B20,'Caracteristicas producto'!C20))",
+            "Inferior Derecha": "=+IF(Formulario!$E$34=\"Algunas\",'Caracteristicas producto'!B21:C21,IF(Formulario!$E$34=\"Todas\",'Caracteristicas producto'!B21,'Caracteristicas producto'!C21))",
+            "Inferior Izquierda": "=+IF(Formulario!$E$34=\"Algunas\",'Caracteristicas producto'!B22:C22,IF(Formulario!$E$34=\"Todas\",'Caracteristicas producto'!B22,'Caracteristicas producto'!C22))"
+        }
+    },
+    "Calendarios de Escritorio": {
+        "variables_formulario": {
+            "Tipo": {
+                "celda": "E24",
+                "valor_ejemplo": "Flexible"
+            },
+            "Orientación": {
+                "celda": "E6",
+                "valor_ejemplo": "Vertical"
+            },
+            "Borde de encuadernado": {
+                "celda": "E8",
+                "valor_ejemplo": "Corto"
+            },
+            "Tamaño Cerrado (mm)": {
+                "celda": "E10",
+                "valor_ejemplo": "218x110"
+            },
+            "Tamaño Abierto (mm)": {
+                "celda": "E12",
+                "valor_ejemplo": "=IFERROR(__xludf.DUMMYFUNCTION(\"index(split(E10,\"\"x\"\"),1,1)&\"\"x\"\"&(index(split(E10,\"\"x\"\"),1,2)*2+80)\"),\"218x300\")"
+            },
+            "Cantidad (de cada uno)": {
+                "celda": "E14",
+                "valor_ejemplo": "2000.0"
+            },
+            "Cantidad diferentes": {
+                "celda": "E16",
+                "valor_ejemplo": "1.0"
+            },
+            "Encuadernado": {
+                "celda": "E18",
+                "valor_ejemplo": "Con rulo negro con perchita"
+            },
+            "Comentarios": {
+                "celda": "E20",
+                "valor_ejemplo": "None"
+            },
+            "Impresión exterior": {
+                "celda": "E26",
+                "valor_ejemplo": "Full Color"
+            },
+            "Impresión de la parte de adentro": {
+                "celda": "E28",
+                "valor_ejemplo": "None"
+            },
+            "Papel": {
+                "celda": "E44",
+                "valor_ejemplo": "Coteado 250gr."
+            },
+            "Tinta Blanca": {
+                "celda": "E32",
+                "valor_ejemplo": "None"
+            },
+            "Laminado": {
+                "celda": "E34",
+                "valor_ejemplo": "No"
+            },
+            "Barniz": {
+                "celda": "E36",
+                "valor_ejemplo": "No"
+            },
+            "Troquelado": {
+                "celda": "E38",
+                "valor_ejemplo": "None"
+            },
+            "¿Hay troquel?": {
+                "celda": "E40",
+                "valor_ejemplo": "None"
+            },
+            "Cantidad de hojas": {
+                "celda": "E46",
+                "valor_ejemplo": "16.0"
+            },
+            "Impresión": {
+                "celda": "E48",
+                "valor_ejemplo": "Full Color"
+            }
+        },
+        "opciones_base": {
+            "Tipo": [
+                "Flexible",
+                "Dura",
+                "Super Dura"
+            ],
+            "Orientación": [
+                "Apaisado",
+                "Vertical"
+            ],
+            "Borde de encuadernado": [
+                "Largo",
+                "Corto"
+            ],
+            "Tamaño Cerrado(cm)": [
+                "160x158",
+                "218x110",
+                "220x190",
+                "160x120"
+            ],
+            "Encuadernado": [
+                "Con Rulo blanco",
+                "Con Rulo negro",
+                "Con rulo blanco con perchita",
+                "Con rulo negro con perchita"
+            ],
+            "Tipo de papel": [
+                "Coteado 350gr.",
+                "Coteado 300gr.",
+                "Coteado 200gr.",
+                "Cartulina 240gr.",
+                "Cartulina 270gr.",
+                "Reciclado 240gr.",
+                "Coteado 130gr."
+            ],
+            "Impresión de tapa y contratapa": [
+                "Tinta Negra fondo blanco sin grisados",
+                "Tinta Negra",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro) fondo blanco sin grisados",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro)",
+                "Tinta color lata fondo blanco sin grisados",
+                "Tinta color lata",
+                "Tinta color pantone fondo blanco sin grisados",
+                "Tinta color pantone"
+            ],
+            "Impresión de retiros": [
+                "Si",
+                "No"
+            ],
+            "Tinta Blanca": [
+                "Solo exterior",
+                "No"
+            ],
+            "Barniz": [
+                "Barniz de máquina Mate Solo Exterior",
+                "Barniz de máquina Mate Exterior e Interior",
+                "Barniz de máquina Brillo Solo Exterior",
+                "Barniz de máquina Brillo Exterior e Interior",
+                "UV pleno Solo Exterior",
+                "UV pleno Exterior e Interior",
+                "UV Sectorizado Solo Exterior",
+                "No"
+            ],
+            "Laminado": [
+                "Mate Solo exterior",
+                "Mate exterior e interior",
+                "Brillo Solo exterior",
+                "Brillo exterior e interior",
+                "No"
+            ],
+            "Troquelado": [
+                "Dificultad Baja",
+                "Dificultad Media",
+                "Dificultad Alta",
+                "No"
+            ],
+            "Ya hay troquel": [
+                "Si",
+                "No"
+            ]
+        },
+        "reglas_logicas": {
+            "Borde de encuadernado": "=if(Formulario!E6=B3,B4,C4)",
+            "Tamaño": "=B5:I5",
+            "Encuadernado": "=IF(Formulario!E4=C1,B6:E6,\"N/C\")",
+            "Tipo": "=B9:D9",
+            "Impresión de tapa y contratapa": "=B11:S11",
+            "Papel": "=IF(Formulario!E24=\"Flexible\",B10:G10,IF(Formulario!E24=\"Dura\",E10:G10,H10))",
+            "Impresión de retiros": "=B12:C12",
+            "Tinta Blanca": "=B13:C13",
+            "Laminado": "=B16:F16",
+            "Barniz": "=if(Formulario!E28=\"Si\",B15:I15,{B15,D15,F15,H15,I15})",
+            "Troquelado": "=B17:E17"
+        }
+    },
+    "Calendarios de pared con y sin mensiles __ barraqueros __ imán con mensiles": {
+        "variables_formulario": {
+            "Tipo": {
+                "celda": "E24",
+                "valor_ejemplo": "Flexible"
+            },
+            "Orientación": {
+                "celda": "E6",
+                "valor_ejemplo": "Vertical"
+            },
+            "Borde de encuadernado": {
+                "celda": "E8",
+                "valor_ejemplo": "Corto"
+            },
+            "Tamaño Cerrado (mm)": {
+                "celda": "E10",
+                "valor_ejemplo": "344x955"
+            },
+            "Cantidad (de cada uno)": {
+                "celda": "E12",
+                "valor_ejemplo": "1000.0"
+            },
+            "Cantidad diferentes": {
+                "celda": "E14",
+                "valor_ejemplo": "1.0"
+            },
+            "Encuadernado": {
+                "celda": "E16",
+                "valor_ejemplo": "N/C"
+            },
+            "Terminación": {
+                "celda": "E18",
+                "valor_ejemplo": "Perforación 3mm"
+            },
+            "Comentarios": {
+                "celda": "E20",
+                "valor_ejemplo": "None"
+            },
+            "Impresión": {
+                "celda": "E46",
+                "valor_ejemplo": "Full Color"
+            },
+            "Papel": {
+                "celda": "E42",
+                "valor_ejemplo": "Obra 80gr."
+            },
+            "Tinta Blanca": {
+                "celda": "E30",
+                "valor_ejemplo": "No"
+            },
+            "Laminado": {
+                "celda": "E32",
+                "valor_ejemplo": "No"
+            },
+            "Barniz": {
+                "celda": "E34",
+                "valor_ejemplo": "No"
+            },
+            "Troquelado": {
+                "celda": "E36",
+                "valor_ejemplo": "No"
+            },
+            "¿Hay troquel?": {
+                "celda": "E38",
+                "valor_ejemplo": "N/C"
+            },
+            "Cantidad de hojas": {
+                "celda": "E44",
+                "valor_ejemplo": "14.0"
+            },
+            "Faces": {
+                "celda": "E48",
+                "valor_ejemplo": "Simple"
+            }
+        },
+        "opciones_base": {
+            "Tipo": [
+                "Flexible",
+                "Dura",
+                "Super Dura"
+            ],
+            "Orientación": [
+                "Apaisado",
+                "Vertical"
+            ],
+            "Borde de encuadernado o Terminación": [
+                "Largo",
+                "Corto"
+            ],
+            "Tamaño Cerrado(cm)": [
+                "90x54",
+                "90x50",
+                "85x50",
+                "80x55",
+                "85x60",
+                "104x55",
+                "110x155",
+                "155x170"
+            ],
+            "Encuadernado": [
+                "Con Rulo blanco",
+                "Con Rulo negro",
+                "Con rulo blanco con perchita",
+                "Con rulo negro con perchita",
+                "Emblocado",
+                "Dos grapas al borde y puntillado",
+                "Dos grapas al borde"
+            ],
+            "Terminación": [
+                "Varilla Superior e Inferior",
+                "Perforación 5mm",
+                "Perforación 3mm",
+                "No"
+            ],
+            "Tipo de papel": [
+                "Coteado 350gr.",
+                "Coteado 300gr.",
+                "Coteado 200gr.",
+                "Cartulina 240gr.",
+                "Cartulina 270gr.",
+                "Reciclado 240gr.",
+                "Coteado 130gr."
+            ],
+            "Impresión de tapa y contratapa": [
+                "Tinta Negra fondo blanco sin grisados",
+                "Tinta Negra",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro) fondo blanco sin grisados",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro)",
+                "Tinta color lata fondo blanco sin grisados",
+                "Tinta color lata",
+                "Tinta color pantone fondo blanco sin grisados",
+                "Tinta color pantone"
+            ],
+            "Tinta Blanca": [
+                "Si",
+                "No"
+            ],
+            "Barniz": [
+                "Barniz de máquina Mate",
+                "Barniz de máquina Brillo",
+                "UV pleno",
+                "UV Sectorizado",
+                "No"
+            ],
+            "Laminado": [
+                "Mate Simple Faz",
+                "Mate Doble Faz",
+                "Brillo Simple Faz",
+                "Brillo Doble Faz",
+                "No"
+            ],
+            "Troquelado": [
+                "Dificultad Baja",
+                "Dificultad Media",
+                "Dificultad Alta",
+                "No"
+            ],
+            "Ya hay troquel": [
+                "Si",
+                "No"
+            ]
+        },
+        "reglas_logicas": {
+            "Borde de encuadernado": "=if(Formulario!E6=B3,B4,C4)",
+            "Tamaño": "=IF(Formulario!E4=D1,B5:M5,N5:T5)",
+            "Encuadernado": "=IF(Formulario!E4=C1,B6:H6,IF(Formulario!E4=D1,F6:H6,\"N/C\"))",
+            "Terminación": "=IF(Formulario!E4=B1,B7:E7,B7:E7)",
+            "Tipo": "=IF(Formulario!E4=D1,\"N/C\",if(or(Formulario!E16=G6,Formulario!E16=H6,Formulario!E16=F6),B10:C10,B10:D10))",
+            "Impresión de tapa y contratapa": "=B12:S12",
+            "Papel": "=IF(Formulario!E4=D1,\"N/C\",IF(Formulario!E24=\"Flexible\",B11:G11,IF(Formulario!E24=\"Dura\",E11:G11,H11)))",
+            "Tinta Blanca": "=B13:C13",
+            "Laminado": "=B16:F16",
+            "Barniz": "=B15:H15",
+            "Troquelado": "=B17:E17",
+            "Hay troquel?": "=IF(Formulario!E36<>\"No\",B18:C18,\"N/C\")"
+        }
+    },
+    "Carpetas": {
+        "variables_formulario": {
+            "Cantidad": {
+                "celda": "E4",
+                "valor_ejemplo": "500.0"
+            },
+            "Entrega": {
+                "celda": "E6",
+                "valor_ejemplo": "10 días"
+            },
+            "Borde del doblado": {
+                "celda": "E8",
+                "valor_ejemplo": "Largo"
+            },
+            "Orientación": {
+                "celda": "E10",
+                "valor_ejemplo": "Vertical"
+            },
+            "Tamaño Cerrado (mm)": {
+                "celda": "E12",
+                "valor_ejemplo": "320x230"
+            },
+            "Papel": {
+                "celda": "E14",
+                "valor_ejemplo": "Coteado 300gr."
+            },
+            "Color del Papel": {
+                "celda": "E16",
+                "valor_ejemplo": "Blanco"
+            },
+            "Impresión": {
+                "celda": "E18",
+                "valor_ejemplo": "Full Color CMYK"
+            },
+            "Faces": {
+                "celda": "E20",
+                "valor_ejemplo": "Solo exterior"
+            },
+            "Comentarios": {
+                "celda": "E22",
+                "valor_ejemplo": "None"
+            },
+            "Laminado": {
+                "celda": "E26",
+                "valor_ejemplo": "No"
+            },
+            "Tinta Blanca": {
+                "celda": "E28",
+                "valor_ejemplo": "No"
+            },
+            "Barniz": {
+                "celda": "E30",
+                "valor_ejemplo": "No"
+            },
+            "Bolsillo": {
+                "celda": "E32",
+                "valor_ejemplo": "Sin imprimir"
+            },
+            "Tipo de Bolsillo": {
+                "celda": "E34",
+                "valor_ejemplo": "Estándar con corte para tarjeta"
+            },
+            "Oreja": {
+                "celda": "E36",
+                "valor_ejemplo": "No"
+            },
+            "Visagra": {
+                "celda": "E38",
+                "valor_ejemplo": "No"
+            },
+            "Troquelado": {
+                "celda": "E40",
+                "valor_ejemplo": "No"
+            },
+            "Hay troquel": {
+                "celda": "E42",
+                "valor_ejemplo": "N/C"
+            },
+            "Tamaño Abierto (mm)": {
+                "celda": "E46",
+                "valor_ejemplo": "=CONCATENATE(M16,\"x\",M17)"
+            }
+        },
+        "opciones_base": {
+            "Cantidad": [
+                "50.0",
+                "100.0",
+                "200.0",
+                "500.0",
+                "1000.0",
+                "2000.0",
+                "4000.0",
+                "5000.0"
+            ],
+            "Tiempo de entrega": [
+                "3 días",
+                "10 días"
+            ],
+            "Borde del Doblado": [
+                "Largo",
+                "Corto"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Tipo de papel": [
+                "Coteado 350gr.",
+                "Coteado 300gr.",
+                "Cartulina 250gr.",
+                "Cartulina 270gr.",
+                "Obra 210gr.",
+                "Obra 240gr.",
+                "Reciclado 240gr.",
+                "Ficha Color 150gr."
+            ],
+            "Color del papel": [
+                "Blanco",
+                "Amarillo",
+                "Rosado",
+                "Verde",
+                "Amarillo",
+                "Aceituna",
+                "Arena",
+                "Azul"
+            ],
+            "Tamaño Cerrado (mm)": [
+                "320x230",
+                "350x240"
+            ],
+            "Tintas": [
+                "Sin Imprimir",
+                "Tina Negra",
+                "Tinta Negra",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro) fondo blanco sin grisados",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro)",
+                "Tinta color lata fondo blanco sin grisados",
+                "Tinta color lata",
+                "Tinta color pantone fondo blanco sin grisados"
+            ],
+            "Faz": [
+                "Solo exterior",
+                "Exterior e interior"
+            ],
+            "Tinta Blanca": [
+                "Solo exterior",
+                "Exterior e interior",
+                "No"
+            ],
+            "Barniz": [
+                "Barniz de máquina Mate SF",
+                "Barniz de máquina Mate DF",
+                "Barniz de máquina Brillo SF",
+                "Barniz de máquina Brillo DF",
+                "UV pleno SF",
+                "UV pleno DF",
+                "UV Sectorizado SF",
+                "UV Sectorizado DF"
+            ],
+            "Laminado": [
+                "Mate Solo exterior",
+                "Brillo Solo exterior",
+                "No"
+            ],
+            "Bolsillo": [
+                "No",
+                "Sin imprimir",
+                "Impreso full color"
+            ],
+            "Tipo de bolsillo": [
+                "Estándar con corte para tarjeta",
+                "Estándar sin corte para tarjeta",
+                "Troquel especial",
+                "Troquel especial",
+                "tipo fuelle lateral"
+            ],
+            "Oreja": [
+                "Si",
+                "No"
+            ],
+            "Visagra": [
+                "Si",
+                "No"
+            ],
+            "Troquelado": [
+                "Dificultad Baja",
+                "Dificultad Media",
+                "Dificultad Alta",
+                "No"
+            ],
+            "Hay troquel": [
+                "Si",
+                "No"
+            ]
+        },
+        "reglas_logicas": {
+            "Papel": "=IF(AND(Formulario!E4>=100,Formulario!E6=\"10 días\"),B5:J5,B5:H5)",
+            "Color": "=IF(Formulario!E14=\"Ficha Color 150gr.\",{B6:F6 , J6},IF(Formulario!E14=\"Cartulina Magic Color Textuara 180gr.\",F6:X6,B6))",
+            "Tintas": "=IF(Formulario!E28<>\"No\",R8, IF(OR(Formulario!E6=\"3 Días\",Formulario!M16/1000*Formulario!M17/1000*Formulario!E4<28),{B8:D8 , R8},B8:S8))",
+            "Tinta Blanca": "=IF(Formulario!E6=\"3 días\",D10,IF(Formulario!E20=\"Solo exterior\",IF(COUNTIF({I6,L6,M6,P6,Q6,R6,S6,W6,X6},Formulario!E16)>0,B10,{B10,D10}),IF(COUNTIF({I6,L6,M6,P6,Q6,R6,S6,W6,X6},Formulario!E16)>0,C10,C10:D10)))",
+            "Barniz": "=IFERROR(__xludf.DUMMYFUNCTION(\"arrayformula(IF(Formulario!E6=\"\"3 Días\"\", J11, IF(Formulario!E20=\"\"Solo exterior\"\",{FILTER(IF(OR(Formulario!E26<>\"\"No\"\",Formulario!M16/1000*Formulario!M17/1000*Formulario!E4<35,Formulario!E28<>\"\"No\"\"),{H11:J11},{B11:J11}),ISNUMBER(FIND(\"\"SF\"\",IF(OR(Formul\"&\"ario!E26<>\"\"No\"\",Formulario!M16/1000*Formulario!M17/1000*Formulario!E4<35,Formulario!E28<>\"\"No\"\"),{H11:J11},{B11:J11})))) , J11},{FILTER(IF(OR(Formulario!E26<>\"\"No\"\",Formulario!M16/1000*Formulario!M17/1000*Formulario!E4<35,Formulario!E28<>\"\"No\"\"),H11:J11,\"&\"B11:J11),ISNUMBER(FIND(\"\"DF\"\",IF(OR(Formulario!E26<>\"\"No\"\",Formulario!M16/1000*Formulario!M17/1000*Formulario!E4<35,Formulario!E28<>\"\"No\"\"),H11:J11,B11:J11)))) , J11})))\"),\"Barniz de máquina Mate SF\")",
+            "Bolsillo": "=IF(Formulario!E6=\"3 días\",B13:C13,IF(Formulario!M16/1000*Formulario!M17/1000*Formulario!E4<18,B13:C13,B13:D13))",
+            "Tipo de bolsillo": "=IF(Formulario!E32=\"No\",\"N/C\",IF(Formulario!E6=\"3 días\",B14:C14,IF(Formulario!M16/1000*Formulario!M17/1000*Formulario!E4<18,B14:C14,B14:E14)))",
+            "Oreja": "=IF(Formulario!E6=\"3 días\",C15,B15:C15)",
+            "Visagra": "=IF(Formulario!E6=\"3 días\",C16,B16:C16)",
+            "Troquelado": "=IF(Formulario!E6=\"3 días\",E17,IF(Formulario!M16/1000*Formulario!M17/1000*Formulario!E4<18,E17,B17:E17))",
+            "Hay troquel": "=IF(Formulario!E40=\"No\",\"N/C\",B18:C18)"
+        }
+    },
+    "Catálogos": {
+        "variables_formulario": {
+            "Tipo": {
+                "celda": "E26",
+                "valor_ejemplo": "Flexible"
+            },
+            "Tiempo de entrega": {
+                "celda": "E6",
+                "valor_ejemplo": "12 Días"
+            },
+            "Orientación": {
+                "celda": "E8",
+                "valor_ejemplo": "Vertical"
+            },
+            "Borde de encuadernado": {
+                "celda": "E10",
+                "valor_ejemplo": "Largo"
+            },
+            "Tamaño Cerrado": {
+                "celda": "E12",
+                "valor_ejemplo": "210x297"
+            },
+            "Tamaño Abierto": {
+                "celda": "E14",
+                "valor_ejemplo": "=IF(E10=\"Corto\",CONCATENATE(MAX($M$31,$M$32)*2,\"x\",MIN($M$31,$M$32)),CONCATENATE(MIN($M$31,$M$32)*2,\"x\",MAX($M$31,$M$32)))"
+            },
+            "Cantidad (de cada uno)": {
+                "celda": "E16",
+                "valor_ejemplo": "20.0"
+            },
+            "Cantidad diferentes": {
+                "celda": "E18",
+                "valor_ejemplo": "1.0"
+            },
+            "Encuadernado": {
+                "celda": "E20",
+                "valor_ejemplo": "Con Rulo negro"
+            },
+            "Comentarios": {
+                "celda": "E22",
+                "valor_ejemplo": "None"
+            },
+            "Impresión de tapa y contratapa": {
+                "celda": "E28",
+                "valor_ejemplo": "Full Color CMYK"
+            },
+            "Impresión de retiros": {
+                "celda": "E30",
+                "valor_ejemplo": "No"
+            },
+            "Papel": {
+                "celda": "E32",
+                "valor_ejemplo": "Coteado 200gr."
+            },
+            "Faces Retiro": {
+                "celda": "E34",
+                "valor_ejemplo": "N/C"
+            },
+            "Tinta Blanca": {
+                "celda": "E36",
+                "valor_ejemplo": "No"
+            },
+            "Laminado": {
+                "celda": "E38",
+                "valor_ejemplo": "No"
+            },
+            "Barniz": {
+                "celda": "E40",
+                "valor_ejemplo": "No"
+            },
+            "Troquelado": {
+                "celda": "E42",
+                "valor_ejemplo": "None"
+            },
+            "¿Hay troquel?": {
+                "celda": "E44",
+                "valor_ejemplo": "None"
+            },
+            "Sobre Doble": {
+                "celda": "E48",
+                "valor_ejemplo": "No"
+            }
+        },
+        "opciones_base": {
+            "Tipo": [
+                "Flexible",
+                "Dura",
+                "Super Dura"
+            ],
+            "Tiempo de Entrega": [
+                "7 Días",
+                "12 Días"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Borde de encuadernado": [
+                "Largo",
+                "Corto"
+            ],
+            "Tamaño Cerrado(cm)": [
+                "150x210",
+                "165x220",
+                "220x280",
+                "210x300"
+            ],
+            "Encuadernado": [
+                "Con Rulo blanco",
+                "Con Rulo negro",
+                "Con lomo cuadrado",
+                "Con dos grapas al medio"
+            ],
+            "Sobre Doble": [
+                "Si",
+                "No"
+            ],
+            "Cierre Elástico": [
+                "5mm Blanco",
+                "5mm Negro",
+                "Especial",
+                "No"
+            ],
+            "Elástico para lapicera": [
+                "5mm Blanco",
+                "5mm Negro",
+                "Especial",
+                "No"
+            ],
+            "Marcapáginas": [
+                "Blanco",
+                "Negro",
+                "Especial",
+                "No"
+            ],
+            "Solapa con Cierre Velcro": [
+                "Blanco",
+                "Negro",
+                "Especial",
+                "No"
+            ],
+            "Redondeado de puntas": [
+                "Si",
+                "No"
+            ],
+            "Tipo de papel": [
+                "Coteado 350gr.",
+                "Coteado 300gr.",
+                "Coteado 200gr.",
+                "Cartulina 250gr.",
+                "Cartulina 270gr.",
+                "Reciclado 240gr.",
+                "Coteado 130gr."
+            ]
+        },
+        "reglas_logicas": {
+            "Borde de encuadernado": "=IF(Formulario!E8=\"Horizontal\",C5,B5)",
+            "Tamaño": "=IF(Formulario!E4=\"Cuaderno\",B6:C6,IF(Formulario!E4=\"Cuadernola\",D6:E6,IF(Formulario!E4=\"Libreta\",#REF!,#REF!)))",
+            "Encuadernado": "=IF(Formulario!E4=\"Libreta de bolsillo\",{B7:C7,E7},B7:E7)",
+            "Sobre Doble": "=IF(Formulario!E20<>\"Con dos grapas al medio\",B10:C10,C10)",
+            "Cierre Elástico": "=IF(AND(Formulario!E26<>\"Flexible\",Formulario!E6<>\"7 Días\"),IF((IF(Formulario!O31<>\"\",Formulario!N31+Formulario!O31,Formulario!N31*2))/1000*Formulario!N32/1000*Formulario!E16<15,{B11:C11,E11},B11:E11),E11)",
+            "Elástico para lapicera": "=IF(AND(Formulario!E26<>\"Flexible\",Formulario!E6<>\"7 Días\"),IF((IF(Formulario!O31<>\"\",Formulario!N31+Formulario!O31,Formulario!N31*2))/1000*Formulario!N32/1000*Formulario!E16<15,{B12:C12,E12},B12:E12),E12)"
+        }
+    },
+    "Colgantes y Tags": {
+        "variables_formulario": {
+            "Tipo de Tag": {
+                "celda": "E4",
+                "valor_ejemplo": "Díptico doblado al medio"
+            },
+            "Borde Doblado": {
+                "celda": "E6",
+                "valor_ejemplo": "N/C"
+            },
+            "Orientación": {
+                "celda": "E8",
+                "valor_ejemplo": "Horizontal"
+            },
+            "Tamaño Cerrado": {
+                "celda": "E10",
+                "valor_ejemplo": "120x70"
+            },
+            "Tamaño Abierto": {
+                "celda": "E12",
+                "valor_ejemplo": "=CONCATENATE(N29,\"x\",N30)"
+            },
+            "Cantidad": {
+                "celda": "E14",
+                "valor_ejemplo": "1500.0"
+            },
+            "Cantidad diferentes": {
+                "celda": "E16",
+                "valor_ejemplo": "1.0"
+            },
+            "Papel": {
+                "celda": "E18",
+                "valor_ejemplo": "Cartulina 250gr."
+            },
+            "Color del Papel": {
+                "celda": "E20",
+                "valor_ejemplo": "Blanco"
+            },
+            "Entrega": {
+                "celda": "E22",
+                "valor_ejemplo": "10 días"
+            },
+            "Comentarios": {
+                "celda": "E24",
+                "valor_ejemplo": "None"
+            },
+            "Contraencolado": {
+                "celda": "E26",
+                "valor_ejemplo": "None"
+            },
+            "Impresión": {
+                "celda": "E28",
+                "valor_ejemplo": "Tinta Negra"
+            },
+            "Faces": {
+                "celda": "E30",
+                "valor_ejemplo": "Simple"
+            },
+            "Laminado": {
+                "celda": "E34",
+                "valor_ejemplo": "No"
+            },
+            "Tinta Blanca": {
+                "celda": "E36",
+                "valor_ejemplo": "No"
+            },
+            "Barniz": {
+                "celda": "E38",
+                "valor_ejemplo": "No"
+            },
+            "Troquelado": {
+                "celda": "E40",
+                "valor_ejemplo": "No"
+            },
+            "Redondeado": {
+                "celda": "E42",
+                "valor_ejemplo": "No"
+            },
+            "Superior Derecha": {
+                "celda": "E44",
+                "valor_ejemplo": "No"
+            },
+            "Superior Izquierda": {
+                "celda": "E46",
+                "valor_ejemplo": "No"
+            },
+            "Inferior Derecha": {
+                "celda": "E48",
+                "valor_ejemplo": "No"
+            }
+        },
+        "opciones_base": {
+            "Tipo de Tag": [
+                "Estándar",
+                "Díptico doblado al medio"
+            ],
+            "Borde doblado": [
+                "Largo",
+                "Corto"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Tamaño Cerrado(cm)": [
+                "70x30",
+                "55x10",
+                "60x11",
+                "78x150"
+            ],
+            "Tipo de papel": [
+                "Coteado 350gr.",
+                "Coteado 300gr.",
+                "Cartulina 250gr.",
+                "Opalina 240gr.",
+                "Reciclado 240gr.",
+                "Obra 210gr.",
+                "Opalina telada 240gr.",
+                "Cartulina Magic Color Textuara 180gr."
+            ],
+            "Color": [
+                "Blanco",
+                "Azul",
+                "Celeste",
+                "Crema",
+                "Lila",
+                "Gris",
+                "Gris Claro",
+                "Ivory"
+            ],
+            "Tiempo de entrega": [
+                "3 días",
+                "10 días"
+            ],
+            "Tintas": [
+                "Tinta Negra fondo blanco sin grisados",
+                "Tinta Negra",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro) fondo blanco sin grisados",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro)",
+                "Tinta color lata fondo blanco sin grisados",
+                "Tinta color lata",
+                "Tinta color pantone fondo blanco sin grisados",
+                "Tinta color pantone"
+            ],
+            "Tinta Blanca": [
+                "Simple Faz",
+                "Doble Faz",
+                "No"
+            ],
+            "Faz": [
+                "Simple",
+                "Doble"
+            ],
+            "Barniz": [
+                "Barniz de máquina Mate SF",
+                "Barniz de máquina Mate DF",
+                "Barniz de máquina Brillo SF",
+                "Barniz de máquina Brillo DF",
+                "UV pleno SF",
+                "UV pleno DF",
+                "UV Sectorizado SF",
+                "UV Sectorizado DF"
+            ],
+            "Laminado": [
+                "Mate Simple Faz",
+                "Mate Doble Faz",
+                "Brillo Simple Faz",
+                "Brillo Doble Faz",
+                "No"
+            ],
+            "Contraencolado": [
+                "Si",
+                "No"
+            ],
+            "Troquelado": [
+                "Troquelado Dificultad Baja",
+                "Troquelado Dificultad Media",
+                "Troquelado Dificultad Alta",
+                "No"
+            ],
+            "Redondeado de puntas": [
+                "Todas",
+                "Algunas",
+                "No"
+            ],
+            "Superior Derecha": [
+                "Si",
+                "No"
+            ]
+        },
+        "reglas_logicas": {
+            "Borde Doblado": "=IF(Formulario!E4=\"Díptico doblado al medio\",'Caracteristicas producto'!B3:C3,\"N/C\")",
+            "Papel": "=IF(AND(Formulario!N29/1000*Formulario!N30/1000*Formulario!E14>=20,Formulario!E22=\"10 días\"),B6:I6,B6:G6)",
+            "Color": "=IF(Formulario!E18=\"Cartulina Magic Color Textuara 180gr.\",C7:X7,B7)",
+            "Tintas": "=IF(OR(Formulario!E22=\"3 Días\",Formulario!N29/1000*Formulario!N30/1000*Formulario!E14<20),{B9:C9 , Q9},B9:R9)",
+            "Tinta Blanca": "=IF(Formulario!E22=\"3 días\",D10,IF(Formulario!E30=\"Simple\",IF(COUNTIF({C7,F7,G7,J7,K7,L7,M7,Q7,S7},Formulario!E20)>0,B10,IF(COUNTIF(B14:G14,Formulario!E38)>0,D10,{B10,D10})),IF(COUNTIF({C7,F7,G7,J7,K7,L7,M7,Q7,S7},Formulario!E20)>0,C10,IF(COUNTIF(B14:G14,Formulario!E38)>0,D10,C10:D10))))",
+            "Barniz": "=IFERROR(__xludf.DUMMYFUNCTION(\"arrayformula(IF(Formulario!E22=\"\"3 Días\"\", J14, IF(Formulario!E30=\"\"Simple\"\",{FILTER(IF(OR(Formulario!E34<>\"\"No\"\",Formulario!N29/1000*Formulario!N30/1000*Formulario!E14<20,Formulario!E36<>\"\"No\"\"),{H14:J14},{B14:J14}),ISNUMBER(FIND(\"\"SF\"\",IF(OR(Formulario!\"&\"E34<>\"\"No\"\",Formulario!N29/1000*Formulario!N30/1000*Formulario!E14<20,Formulario!E36<>\"\"No\"\"),{H14:J14},{B14:J14})))) , J14},{FILTER(IF(OR(Formulario!E34<>\"\"No\"\",Formulario!N29/1000*Formulario!N30/1000*Formulario!E14<20,Formulario!E36<>\"\"No\"\"),H14:J14,B14\"&\":J14),ISNUMBER(FIND(\"\"DF\"\",IF(OR(Formulario!E34<>\"\"No\"\",Formulario!N29/1000*Formulario!N30/1000*Formulario!E14<20,Formulario!E36<>\"\"No\"\"),H14:J14,B14:J14)))) , J14})))\"),\"UV Sectorizado SF\")",
+            "Laminado": "=IFERROR(__xludf.DUMMYFUNCTION(\"IF(Formulario!$E$30=\"\"Doble\"\",{FILTER(B15:E15,ISNUMBER(FIND(\"\"Doble\"\",{B15:E15}))),F15},{B15:F15})\"),\"Mate Simple Faz\")",
+            "Contraencolado": "=IF(Formulario!E22=\"3 Días\",C16,IF(Formulario!E6=\"N/C\",'Caracteristicas producto'!B16:C16,'Caracteristicas producto'!C16))",
+            "Troquelado": "=IF(Formulario!E22=\"3 días\",E17,B17:E17)",
+            "Redondeado de puntas": "=IF(Formulario!E22=\"3 Días\",D18,B18:D18)",
+            "Superior Derecha": "=IF(Formulario!$E$42=\"Algunas\",'Caracteristicas producto'!B19:C19,IF(Formulario!$E$42=\"Todas\",'Caracteristicas producto'!B19,'Caracteristicas producto'!C19))",
+            "Superior Izquierda": "=+IF(Formulario!$E$42=\"Algunas\",'Caracteristicas producto'!B20:C20,IF(Formulario!$E$42=\"Todas\",'Caracteristicas producto'!B20,'Caracteristicas producto'!C20))",
+            "Inferior Derecha": "=+IF(Formulario!$E$42=\"Algunas\",'Caracteristicas producto'!B21:C21,IF(Formulario!$E$42=\"Todas\",'Caracteristicas producto'!B21,'Caracteristicas producto'!C21))",
+            "Inferior Izquierda": "=+IF(Formulario!$E$42=\"Algunas\",'Caracteristicas producto'!B22:C22,IF(Formulario!$E$42=\"Todas\",'Caracteristicas producto'!B22,'Caracteristicas producto'!C22))",
+            "Perforación": "=IF(Formulario!E22=\"3 días\",B23,B23:E23)"
+        }
+    },
+    "Cuadernos _ Cuadernolas _ Libretas (1)": {
+        "variables_formulario": {
+            "Tipo": {
+                "celda": "E26",
+                "valor_ejemplo": "Super Dura"
+            },
+            "Tiempo de entrega": {
+                "celda": "E6",
+                "valor_ejemplo": "12 Días"
+            },
+            "Orientación": {
+                "celda": "E8",
+                "valor_ejemplo": "Vertical"
+            },
+            "Borde de encuadernado": {
+                "celda": "E10",
+                "valor_ejemplo": "Largo"
+            },
+            "Tamaño Cerrado (mm)": {
+                "celda": "E12",
+                "valor_ejemplo": "150x210"
+            },
+            "Tamaño Abierto (mm)": {
+                "celda": "E14",
+                "valor_ejemplo": "=IF(E10=\"Corto\",CONCATENATE(MAX($M$31,$M$32)*2,\"x\",MIN($M$31,$M$32)),CONCATENATE(MIN($M$31,$M$32)*2,\"x\",MAX($M$31,$M$32)))"
+            },
+            "Cantidad (de cada uno)": {
+                "celda": "E16",
+                "valor_ejemplo": "None"
+            },
+            "Cantidad diferentes": {
+                "celda": "E18",
+                "valor_ejemplo": "1.0"
+            },
+            "Encuadernado": {
+                "celda": "E20",
+                "valor_ejemplo": "Con Rulo blanco"
+            },
+            "Comentarios": {
+                "celda": "E22",
+                "valor_ejemplo": "None"
+            },
+            "Impresión de tapa y contratapa": {
+                "celda": "E28",
+                "valor_ejemplo": "Full Color"
+            },
+            "Impresión de retiros": {
+                "celda": "E30",
+                "valor_ejemplo": "No"
+            },
+            "Papel": {
+                "celda": "E32",
+                "valor_ejemplo": "Coteado 130gr."
+            },
+            "Faces Retiro": {
+                "celda": "E34",
+                "valor_ejemplo": "N/C"
+            },
+            "Tinta Blanca": {
+                "celda": "E36",
+                "valor_ejemplo": "No"
+            },
+            "Laminado": {
+                "celda": "E38",
+                "valor_ejemplo": "Brillo Solo tapa y contratapa"
+            },
+            "Barniz": {
+                "celda": "E40",
+                "valor_ejemplo": "No"
+            },
+            "Troquelado": {
+                "celda": "E42",
+                "valor_ejemplo": "No"
+            },
+            "¿Hay troquel?": {
+                "celda": "E44",
+                "valor_ejemplo": "N/C"
+            },
+            "Sobre Doble": {
+                "celda": "E48",
+                "valor_ejemplo": "No"
+            }
+        },
+        "opciones_base": {
+            "Tipo": [
+                "Cuaderno",
+                "Cuadernola",
+                "Libreta",
+                "Libreta de bolsillo"
+            ],
+            "Tiempo de Entrega": [
+                "7 Días",
+                "12 Días"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Apaisado"
+            ],
+            "Borde de encuadernado": [
+                "Largo",
+                "Corto"
+            ],
+            "Tamaño Cerrado(cm)": [
+                "75x100",
+                "80x110",
+                "100x150",
+                "110x165",
+                "150x210",
+                "165x220",
+                "220x280",
+                "210x300"
+            ],
+            "Encuadernado": [
+                "Con Rulo blanco",
+                "Con Rulo negro",
+                "Con lomo cuadrado",
+                "Con dos grapas al medio"
+            ],
+            "Sobre Doble": [
+                "Si",
+                "No"
+            ],
+            "Solapa": [
+                "Blanca pegada en la tapa",
+                "Blanca pegada en la contratapa",
+                "Impresa pegada en la tapa",
+                "Impresa pegada en la contratapa",
+                "No"
+            ],
+            "Cierre Elástico": [
+                "5mm Blanco",
+                "5mm Negro",
+                "Especial",
+                "No"
+            ],
+            "Elástico para lapicera": [
+                "5mm Blanco",
+                "5mm Negro",
+                "Especial",
+                "No"
+            ],
+            "Marcapáginas": [
+                "Blanco",
+                "Negro",
+                "Especial",
+                "No"
+            ],
+            "Hoja de Stickers full color": [
+                "No",
+                "1.0",
+                "2.0",
+                "3.0",
+                "4.0",
+                "5.0",
+                "6.0",
+                "7.0"
+            ],
+            "Dificultad del troquel del sticker": [
+                "Baja",
+                "Media",
+                "Alta",
+                "No"
+            ],
+            "Solapa con Cierre Velcro": [
+                "Blanco",
+                "Negro",
+                "Especial",
+                "No"
+            ]
+        },
+        "reglas_logicas": {}
+    },
+    "Diplomas": {
+        "variables_formulario": {
+            "Cantidad (de cada uno)": {
+                "celda": "E4",
+                "valor_ejemplo": "450.0"
+            },
+            "Cantidad diferentes": {
+                "celda": "E6",
+                "valor_ejemplo": "None"
+            },
+            "Tamaño Cerrado (mm)": {
+                "celda": "E8",
+                "valor_ejemplo": "150x210"
+            },
+            "Orientación": {
+                "celda": "E10",
+                "valor_ejemplo": "Horizontal"
+            },
+            "Comentarios": {
+                "celda": "E12",
+                "valor_ejemplo": "None"
+            },
+            "Papel": {
+                "celda": "E14",
+                "valor_ejemplo": "Coteado 300gr."
+            },
+            "Color del Papel": {
+                "celda": "E16",
+                "valor_ejemplo": "Blanco"
+            },
+            "Entrega": {
+                "celda": "E18",
+                "valor_ejemplo": "10 días"
+            },
+            "Impresión": {
+                "celda": "E20",
+                "valor_ejemplo": "Full Color CMYK"
+            },
+            "Faces": {
+                "celda": "E22",
+                "valor_ejemplo": "Simple"
+            },
+            "Laminado": {
+                "celda": "E26",
+                "valor_ejemplo": "Mate Simple Faz"
+            },
+            "Tinta Blanca": {
+                "celda": "E28",
+                "valor_ejemplo": "No"
+            },
+            "Barniz": {
+                "celda": "E30",
+                "valor_ejemplo": "UV Sectorizado SF"
+            },
+            "Dato Variable": {
+                "celda": "E32",
+                "valor_ejemplo": "Si"
+            },
+            "Empresa": {
+                "celda": "E36",
+                "valor_ejemplo": "Empres de prueba"
+            },
+            "Contacto": {
+                "celda": "E38",
+                "valor_ejemplo": "Nombre contacto de prueba"
+            },
+            "Mail": {
+                "celda": "E40",
+                "valor_ejemplo": "prueba@prueba.com"
+            },
+            "Teléfono": {
+                "celda": "E42",
+                "valor_ejemplo": "123456.0"
+            }
+        },
+        "opciones_base": {
+            "Cantidad": [
+                "50.0",
+                "100.0",
+                "200.0",
+                "500.0",
+                "1000.0",
+                "2000.0",
+                "4000.0",
+                "5000.0"
+            ],
+            "Tiempo de entrega": [
+                "3 días",
+                "10 días"
+            ],
+            "Tipo de papel": [
+                "Coteado 350gr.",
+                "Coteado 300gr.",
+                "Cartulina 250gr.",
+                "Cartulina 270gr.",
+                "Obra 210gr.",
+                "Obra 240gr.",
+                "Reciclado 240gr.",
+                "Ficha Color 150gr."
+            ],
+            "Color del papel": [
+                "Blanco",
+                "Amarillo",
+                "Rosado",
+                "Verde",
+                "Amarillo",
+                "Aceituna",
+                "Arena",
+                "Azul"
+            ],
+            "Tamaño Cerrado (mm)": [
+                "150x210",
+                "170x230",
+                "220x320",
+                "310x460"
+            ],
+            "Tintas": [
+                "=IF(OR(Formulario!E18=\"3 Días\"",
+                "Formulario!M30/1000*Formulario!M31/1000*Formulario!E4<10)",
+                "{B6:C6",
+                "Q6}",
+                "B6:R6)",
+                "Tinta Negra",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro) fondo blanco sin grisados",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro)",
+                "Tinta color lata fondo blanco sin grisados",
+                "Tinta color lata",
+                "Tinta color pantone fondo blanco sin grisados",
+                "Tinta color pantone"
+            ],
+            "Faz": [
+                "Simple",
+                "Doble"
+            ],
+            "Tinta Blanca": [
+                "=IF(Formulario!E18=\"3 días\"",
+                "D8",
+                "IF(Formulario!E22=\"Simple\"",
+                "IF(COUNTIF({I4",
+                "L4",
+                "M4",
+                "P4",
+                "Q4",
+                "R4",
+                "S4",
+                "W4",
+                "X4}",
+                "Formulario!E16)>0",
+                "B8",
+                "IF(COUNTIF(B10:G10",
+                "Formulario!E30)>0",
+                "D8",
+                "{B8",
+                "D8}))",
+                "IF(COUNTIF({I4",
+                "L4",
+                "M4",
+                "P4",
+                "Q4",
+                "R4",
+                "S4",
+                "W4",
+                "X4}",
+                "Formulario!E16)>0",
+                "C8",
+                "IF(COUNTIF(B10:G10",
+                "Formulario!E30)>0",
+                "D8",
+                "C8:D8))))",
+                "No"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Barniz": [
+                "FORMULA",
+                "FORMULA"
+            ],
+            "Laminado": [
+                "Mate Simple Faz",
+                "Brillo Simple Faz",
+                "No"
+            ],
+            "Dato variable": [
+                "=IF(OR(COUNTIF({B6:C6",
+                "Q6}",
+                "Formulario!E20)=0",
+                "COUNTIF(B10:G10",
+                "Formulario!E30)>0)",
+                "C12",
+                "B12:C12)",
+                "No"
+            ],
+            "Papel": [
+                "=IF(AND(Formulario!E4>=100",
+                "Formulario!E18=\"10 días\")",
+                "B3:J3",
+                "B3:H3)",
+                "Coteado 300gr.",
+                "Cartulina 250gr.",
+                "Cartulina 270gr.",
+                "Obra 210gr.",
+                "Obra 240gr.",
+                "Reciclado 240gr.",
+                "Ficha Color 150gr."
+            ],
+            "Color": [
+                "=IF(Formulario!E14=\"Ficha Color 150gr.\"",
+                "{B4:F4",
+                "J4}",
+                "IF(Formulario!E14=\"Cartulina Magic Color Textuara 180gr.\"",
+                "F4:X4",
+                "B4))"
+            ]
+        },
+        "reglas_logicas": {}
+    },
+    "Facturación Tradicional": {
+        "variables_formulario": {
+            "Tipo de documentación": {
+                "celda": "E4",
+                "valor_ejemplo": "Contado"
+            },
+            "Tiempo de entrega": {
+                "celda": "E6",
+                "valor_ejemplo": "3 Días"
+            },
+            "Tamaño Cerrado": {
+                "celda": "E8",
+                "valor_ejemplo": "148x210"
+            },
+            "Cantidad": {
+                "celda": "E10",
+                "valor_ejemplo": "2000.0"
+            },
+            "Vías": {
+                "celda": "E12",
+                "valor_ejemplo": "3.0"
+            },
+            "Papel": {
+                "celda": "E14",
+                "valor_ejemplo": "Obra 90gr."
+            },
+            "Impresión": {
+                "celda": "E16",
+                "valor_ejemplo": "Tinta color lata fondo blanco sin grisados"
+            },
+            "Faces": {
+                "celda": "E18",
+                "valor_ejemplo": "Simple"
+            },
+            "Encuadernado": {
+                "celda": "E20",
+                "valor_ejemplo": "Hojas Sueltas"
+            },
+            "Orientación": {
+                "celda": "E22",
+                "valor_ejemplo": "Vertical"
+            },
+            "Puntillado": {
+                "celda": "E24",
+                "valor_ejemplo": "En dos partes"
+            },
+            "Emblocado": {
+                "celda": "E26",
+                "valor_ejemplo": "No"
+            },
+            "Aclaración puntillado": {
+                "celda": "E28",
+                "valor_ejemplo": "N/C"
+            },
+            "Vias puntilladas": {
+                "celda": "E30",
+                "valor_ejemplo": "Última vía fija"
+            },
+            "Serie": {
+                "celda": "E32",
+                "valor_ejemplo": "A"
+            },
+            "Numeración inicial": {
+                "celda": "E34",
+                "valor_ejemplo": "101.0"
+            },
+            "Numeración final": {
+                "celda": "E36",
+                "valor_ejemplo": "150.0"
+            },
+            "Nro Constancia": {
+                "celda": "E38",
+                "valor_ejemplo": "123456789.0"
+            },
+            "Tipo Empresa": {
+                "celda": "E40",
+                "valor_ejemplo": "iva"
+            },
+            "Vencimiento": {
+                "celda": "E42",
+                "valor_ejemplo": "2026-08-25 00:00:00"
+            },
+            "Color Vía 1": {
+                "celda": "E44",
+                "valor_ejemplo": "Blanco"
+            },
+            "Color Vía 2": {
+                "celda": "E46",
+                "valor_ejemplo": "Amarillo"
+            },
+            "Color Vía 3": {
+                "celda": "E48",
+                "valor_ejemplo": "Celeste"
+            }
+        },
+        "opciones_base": {
+            "Tiempo de Entrega": [
+                "3 Días",
+                "7 Días"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Borde de encuadernado": [
+                "Largo",
+                "Corto"
+            ],
+            "Tamaño Cerrado(cm)": [
+                "110x170",
+                "148x210",
+                "215x170",
+                "230x240",
+                "210x297",
+                "215x355"
+            ],
+            "Encuadernado": [
+                "Encolado",
+                "Dos grapas tipo libreta",
+                "Hojas Sueltas"
+            ],
+            "Tipo de documentación": [
+                "Contado",
+                "Devolucion Contado",
+                "Documento",
+                "Factura",
+                "Nota De Credito",
+                "Recibos",
+                "Pro Forma Exterior",
+                "Recibos De Debito"
+            ],
+            "Tipo de empresa": [
+                "iva",
+                "monotributo ley 18083",
+                "exonerado art. 2 titulo 3 t.o. 1996",
+                "exonerado art. 1 titulo 3 t.o. 1996",
+                "consumo final",
+                "exportacion",
+                "exonerado art. 19 lit. h del tit. 10 to. 1996"
+            ],
+            "Vías": [
+                "1.0",
+                "2.0",
+                "3.0",
+                "4.0",
+                "5.0"
+            ],
+            "Papel": [
+                "Obra 60gr.",
+                "Autocopiante 60gr.",
+                "Obra 80gr.",
+                "Obra 90gr."
+            ],
+            "Color Vía 1": [
+                "Blanco",
+                "Celeste",
+                "Amarillo",
+                "Rosado",
+                "Verde",
+                "Indiferente"
+            ],
+            "Color Vía 2": [
+                "Blanco",
+                "Celeste",
+                "Amarillo",
+                "Rosado",
+                "Verde",
+                "Indiferente"
+            ],
+            "Color Vía 3": [
+                "Blanco",
+                "Celeste",
+                "Amarillo",
+                "Rosado",
+                "Verde",
+                "Indiferente"
+            ],
+            "Color Vía 4": [
+                "Blanco",
+                "Celeste",
+                "Amarillo",
+                "Rosado",
+                "Verde",
+                "Indiferente"
+            ]
+        },
+        "reglas_logicas": {
+            "Papel": "=IF(Formulario!E20=\"Dos grapas tipo libreta\",B15:C15,D15:E15)",
+            "Color Vía 2": "=IF(Formulario!$E$12>=2,B17:G17,\"N/C\")",
+            "Color Vía 3": "=IF(Formulario!$E$12>=3,B18:G18,\"N/C\")",
+            "Color Vía 4": "=IF(Formulario!$E$12>=4,B19:G19,\"N/C\")",
+            "Color Vía 5": "=IF(Formulario!$E$12>=5,B20:G20,\"N/C\")",
+            "Nombre Vía 2": "=IF(Formulario!$E$12>=2,B22:G22,\"N/C\")",
+            "Nombre Vía 3": "=IF(Formulario!$E$12>=3,B23:G23,\"N/C\")",
+            "Nombre Vía 4": "=IF(Formulario!$E$12>=4,B24:G24,\"N/C\")",
+            "Nombre Vía 5": "=IF(Formulario!$E$12>=5,B25:G25,\"N/C\")",
+            "Impresión": "=IF(OR(Formulario!E6=\"7 Días\",(IF(Formulario!O39<>\"\",Formulario!N39+Formulario!O39,Formulario!N39*2))/1000*Formulario!N40/1000*Formulario!E10<15),{B26:C26 , Q26},B26:R26)"
+        }
+    },
+    "Folletos": {
+        "variables_formulario": {
+            "Tipo": {
+                "celda": "E4",
+                "valor_ejemplo": "Tríptico"
+            },
+            "Cantidad (de cada uno)": {
+                "celda": "E6",
+                "valor_ejemplo": "None"
+            },
+            "Cantidad diferentes": {
+                "celda": "E8",
+                "valor_ejemplo": "None"
+            },
+            "Tamaño Cerrado (mm)": {
+                "celda": "E10",
+                "valor_ejemplo": "None"
+            },
+            "Doblado": {
+                "celda": "E12",
+                "valor_ejemplo": "Envolvente"
+            },
+            "Orientación": {
+                "celda": "E14",
+                "valor_ejemplo": "Vertical"
+            },
+            "Borde del doblado": {
+                "celda": "E16",
+                "valor_ejemplo": "Largo"
+            },
+            "Comentarios": {
+                "celda": "E18",
+                "valor_ejemplo": "None"
+            },
+            "Tamaño Abierto (mm)": {
+                "celda": "E20",
+                "valor_ejemplo": "21x29,7"
+            },
+            "Papel": {
+                "celda": "E22",
+                "valor_ejemplo": "Coteado 130gr."
+            },
+            "Color del papel": {
+                "celda": "E24",
+                "valor_ejemplo": "Blanco"
+            },
+            "Entrega": {
+                "celda": "E26",
+                "valor_ejemplo": "10 días"
+            },
+            "Impresión": {
+                "celda": "E28",
+                "valor_ejemplo": "Full Color CMYK"
+            },
+            "Faces": {
+                "celda": "E30",
+                "valor_ejemplo": "Doble"
+            },
+            "Laminado": {
+                "celda": "E34",
+                "valor_ejemplo": "No"
+            },
+            "Tinta Blanca": {
+                "celda": "E36",
+                "valor_ejemplo": "No"
+            },
+            "Barniz": {
+                "celda": "E38",
+                "valor_ejemplo": "No"
+            }
+        },
+        "opciones_base": {
+            "Cantidad": [
+                "50.0",
+                "100.0",
+                "200.0",
+                "500.0",
+                "1000.0",
+                "2000.0",
+                "4000.0",
+                "5000.0"
+            ],
+            "Tiempo de entrega": [
+                "3 días",
+                "10 días"
+            ],
+            "Tipo de folleto": [
+                "Volante",
+                "Díptico",
+                "Tríptico",
+                "Cuatríptico",
+                "Multipliegue"
+            ],
+            "Doblado": [
+                "En Ventana",
+                "Envolvente",
+                "En Zig-Zag",
+                "En Cruz",
+                "Al centro y al centro"
+            ],
+            "Borde del Doblado": [
+                "Largo",
+                "Corto"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Apaisado"
+            ],
+            "Tipo de papel": [
+                "Coteado 115gr.",
+                "Coteado 130gr.",
+                "Coteado 150gr.",
+                "Coteado 170gr.",
+                "Coteado 200gr.",
+                "Coteado 250gr.",
+                "Coteado 300gr.",
+                "Coteado 350gr."
+            ],
+            "Color de papel": [
+                "Blanco",
+                "Celeste",
+                "Amarillo",
+                "Rosado",
+                "Verde"
+            ],
+            "Tamaño Abierto (cm)": [
+                "75x105",
+                "100x140",
+                "110x160",
+                "140x200",
+                "160x230",
+                "160x320",
+                "200x287",
+                "220x330"
+            ],
+            "Tintas": [
+                "Tinta Negra fondo blanco sin grisados",
+                "Tinta Negra",
+                "Tinta color lata",
+                "Tinta color pantone",
+                "Dos tintas de lata",
+                "Dos tintas Pantone",
+                "1 Tinta Lata y 1 Pantone",
+                "Full Color CMYK"
+            ],
+            "Faz": [
+                "Simple",
+                "Doble"
+            ],
+            "Diferentes": [
+                "1.0",
+                "2.0",
+                "3.0",
+                "4.0",
+                "5.0",
+                "6.0",
+                "7.0",
+                "8.0"
+            ],
+            "Tinta Blanca": [
+                "Doble Faz",
+                "Simple Faz",
+                "No"
+            ],
+            "Barniz": [
+                "Barniz de máquina Mate SF",
+                "Barniz de máquina Mate DF",
+                "Barniz de máquina Brillo SF",
+                "Barniz de máquina Brillo DF",
+                "UV pleno SF",
+                "UV pleno DF",
+                "UV Sectorizado SF",
+                "UV Sectorizado DF"
+            ],
+            "Laminado": [
+                "Mate Simple faz",
+                "Mate Doble faz",
+                "Brillo Simple Faz",
+                "Brillo Doble faz",
+                "No"
+            ]
+        },
+        "reglas_logicas": {
+            "Doblado": "=IF(Formulario!E4=\"Volante\",\"N/C\",IF(Formulario!E4=\"Díptico\",\"Al medio\",IF(Formulario!E4=\"Tríptico\",'Caracteristicas producto'!B4:D4,IF(Formulario!E4=\"Cuatríptico\",'Caracteristicas producto'!B4:F4,\"Aclarar en comentarios\"))))",
+            "Borde del Doblado": "=IF(OR(Formulario!E12=\"N/C\",Formulario!E12=\"En Cruz\",Formulario!E12=\"Aclarar en comentarios\"),\"N/C\",B5:C5)",
+            "Tamaño Abierto": "=+IF(Formulario!E4=\"Volante\",Formulario!E10,IF(Formulario!E4=\"Multipliegue\",\"Escribir a mano\",IF(Formulario!E4=\"Díptico\",IF(Formulario!E16=\"Largo\",CONCATENATE(MIN(Formulario!L18:L19)*2,\"x\",MAX(Formulario!L18:L19)),CONCATENATE(MAX(Formulario!L18:L19)*2,\"x\",MIN(Formulario!L18:L19))),IF(Formulario!E4=\"Tríptico\",IF(Formulario!E12=\"En Ventana\",IF(Formulario!E16=\"Largo\",CONCATENATE(MIN(Formulario!L18:L19)*2+MAX(15,MIN(Formulario!L18:L19)*0.1),\"x\",MAX(Formulario!L18:L19)),CONCATENATE(MAX(Formulario!L18:L19)*2+MAX(15,MAX(Formulario!L18:L19)*0.1),\"x\",MIN(Formulario!L18:L19))),IF(OR(Formulario!E12=\"Envolvente\",Formulario!E12=\"En Zig-Zag\"),IF(Formulario!E16=\"Largo\",CONCATENATE(MIN(Formulario!L18:L19)*3,\"x\",MAX(Formulario!L18:L19)),CONCATENATE(MAX(Formulario!L18:L19)*3,\"x\",MIN(Formulario!L18:L19))),\"Error verificar doblado\")),IF(Formulario!E4=\"Cuatríptico\",IF(Formulario!E12=\"En Cruz\",CONCATENATE(MIN(Formulario!L18:L19)*2,\"x\",MAX(Formulario!L18:L19)*2),IF(OR(Formulario!E12=\"En Ventana\",Formulario!E12=\"Envolvente\",Formulario!E12=\"En Zig-Zag\",Formulario!E12=\"Al centro y al centro\"),IF(Formulario!E16=\"Largo\",CONCATENATE(MIN(Formulario!L18:L19)*4,\"x\",MAX(Formulario!L18:L19)),CONCATENATE(MAX(Formulario!L18:L19)*4,\"x\",MIN(Formulario!L18:L19))),\"Error en el tipo de doblado, verificar\")),\"Error en tipo de folleto, verificar\")))))",
+            "Barniz": "=IFERROR(__xludf.DUMMYFUNCTION(\"arrayformula(IF(Formulario!E26=\"\"3 Días\"\", J14, IF(Formulario!E30=\"\"Simple\"\",{FILTER(IF(OR(Formulario!E34<>\"\"No\"\",Formulario!E36<>\"\"No\"\",Formulario!L18/1000*Formulario!L19/1000*Formulario!E6<75),{H14:J14},{B14:J14}),ISNUMBER(FIND(\"\"SF\"\",IF(OR(Formulario!E\"&\"34<>\"\"No\"\",Formulario!E36<>\"\"No\"\",Formulario!L18/1000*Formulario!L19/1000*Formulario!E6<75),{H14:J14},{B14:J14})))) , J14},{FILTER(IF(OR(Formulario!E34<>\"\"No\"\",Formulario!E36<>\"\"No\"\",Formulario!L18/1000*Formulario!L19/1000*Formulario!E6<75),H14:J14,B14:J1\"&\"4),ISNUMBER(FIND(\"\"DF\"\",IF(OR(Formulario!E34<>\"\"No\"\",Formulario!E36<>\"\"No\"\",Formulario!L18/1000*Formulario!L19/1000*Formulario!E6<75),H14:J14,B14:J14)))) , J14})))\"),\"#VALUE!\")",
+            "Tinta Blanca": "=IFERROR(__xludf.DUMMYFUNCTION(\"arrayformula(IF(Formulario!E26=\"\"3 Días\"\", D13, IF(Formulario!E30=\"\"Simple\"\",Split(TEXTJOIN(\"\",\"\",TRUE,FILTER(B13:D13,ISNUMBER(FIND(\"\"Simple\"\",B13:D13))),D13),\"\",\"\"),Split(TEXTJOIN(\"\",\"\",TRUE,FILTER(B13:D13,ISNUMBER(FIND(\"\"Doble\"\",B13:D13))),D13),\"\",\"\")))\"&\")\"),\"Doble Faz\")",
+            "Laminado": "=IFERROR(__xludf.DUMMYFUNCTION(\"arrayformula(IF(Formulario!E4=\"\"Volante\"\",ARRAYFORMULA(IF(Formulario!$E$30=\"\"Doble\"\",Split(TEXTJOIN(\"\",\"\",TRUE,FILTER(B15:E15,ISNUMBER(FIND(\"\"Doble\"\",B15:E15))),F15),\"\",\"\"),B15:F15)),'Caracteristicas producto'!F15))\"),\"No\")",
+            "Tintas": "=IF(OR(Formulario!E26=\"3 Días\",Formulario!L18/1000*Formulario!L19/1000*Formulario!E6<75),{B10:C10 , I10},B10:J10)",
+            "Color del papel": "=IF(Formulario!E22=\"Obra color 75gr.\",B8:G8,B8)"
+        }
+    },
+    "Formularios": {
+        "variables_formulario": {
+            "Tipo de documentación": {
+                "celda": "E4",
+                "valor_ejemplo": "uso interno"
+            },
+            "Tiempo de entrega": {
+                "celda": "E6",
+                "valor_ejemplo": "7 Días"
+            },
+            "Tamaño Cerrado": {
+                "celda": "E8",
+                "valor_ejemplo": "148x210"
+            },
+            "Cantidad": {
+                "celda": "E10",
+                "valor_ejemplo": "1000.0"
+            },
+            "Vías": {
+                "celda": "E12",
+                "valor_ejemplo": "2.0"
+            },
+            "Papel": {
+                "celda": "E14",
+                "valor_ejemplo": "Obra 75gr."
+            },
+            "Impresión": {
+                "celda": "E16",
+                "valor_ejemplo": "Tinta Negra"
+            },
+            "Faces": {
+                "celda": "E18",
+                "valor_ejemplo": "Simple"
+            },
+            "Encuadernado": {
+                "celda": "E20",
+                "valor_ejemplo": "None"
+            },
+            "Orientación": {
+                "celda": "E22",
+                "valor_ejemplo": "Vertical"
+            },
+            "Puntillado": {
+                "celda": "E24",
+                "valor_ejemplo": "No"
+            },
+            "Emblocado": {
+                "celda": "E26",
+                "valor_ejemplo": "No"
+            },
+            "Aclaración puntillado": {
+                "celda": "E28",
+                "valor_ejemplo": "N/C"
+            },
+            "Vias puntilladas": {
+                "celda": "E30",
+                "valor_ejemplo": "N/C"
+            },
+            "Serie (Opcional)": {
+                "celda": "E32",
+                "valor_ejemplo": "None"
+            },
+            "Numeración inicial (Opcional)": {
+                "celda": "E34",
+                "valor_ejemplo": "None"
+            },
+            "Numeración final (Opcional)": {
+                "celda": "E36",
+                "valor_ejemplo": "None"
+            },
+            "Color Vía 1": {
+                "celda": "E38",
+                "valor_ejemplo": "Blanco"
+            },
+            "Color Vía 2": {
+                "celda": "E40",
+                "valor_ejemplo": "Amarillo"
+            },
+            "Color Vía 3": {
+                "celda": "E42",
+                "valor_ejemplo": "Indiferente"
+            },
+            "Color Vía 4": {
+                "celda": "E44",
+                "valor_ejemplo": "None"
+            },
+            "Color Vía 5": {
+                "celda": "E46",
+                "valor_ejemplo": "None"
+            },
+            "Nombre Vía 1 (Opcional)": {
+                "celda": "E48",
+                "valor_ejemplo": "Original Cliente"
+            }
+        },
+        "opciones_base": {
+            "Tiempo de Entrega": [
+                "2 Días",
+                "7 Días"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Borde de encuadernado": [
+                "Largo",
+                "Corto"
+            ],
+            "Tamaño Cerrado(cm)": [
+                "110x170",
+                "148x210",
+                "215x170",
+                "230x240",
+                "210x297",
+                "215x355"
+            ],
+            "Encuadernado": [
+                "Encolado",
+                "Dos grapas tipo libreta",
+                "Hojas Sueltas"
+            ],
+            "Tipo de documentación": [
+                "nota de pedido",
+                "orden de servicio",
+                "planilla de servicio",
+                "presupuesto",
+                "recibos de sueldo",
+                "orden de reparacion",
+                "recibo interno",
+                "uso interno"
+            ],
+            "Vías": [
+                "1.0",
+                "2.0",
+                "3.0",
+                "4.0",
+                "5.0"
+            ],
+            "Papel": [
+                "Obra 60gr.",
+                "Autocopiante 60gr.",
+                "Obra 75gr.",
+                "Obra 80gr.",
+                "Obra 90gr."
+            ],
+            "Color Vía 1": [
+                "Blanco",
+                "Celeste",
+                "Amarillo",
+                "Rosado",
+                "Verde",
+                "Indiferente"
+            ],
+            "Color Vía 2": [
+                "Blanco",
+                "Celeste",
+                "Amarillo",
+                "Rosado",
+                "Verde",
+                "Indiferente"
+            ],
+            "Color Vía 3": [
+                "Blanco",
+                "Celeste",
+                "Amarillo",
+                "Rosado",
+                "Verde",
+                "Indiferente"
+            ],
+            "Color Vía 4": [
+                "Blanco",
+                "Celeste",
+                "Amarillo",
+                "Rosado",
+                "Verde",
+                "Indiferente"
+            ],
+            "Color Vía 5": [
+                "Blanco",
+                "Celeste",
+                "Amarillo",
+                "Rosado",
+                "Verde",
+                "Indiferente"
+            ],
+            "Nombre Vía 1": [
+                "Original Cliente"
+            ],
+            "Nombre Vía 2": [
+                "Copia Archivo",
+                "Copia Contaduría",
+                "Copia Transportista"
+            ]
+        },
+        "reglas_logicas": {
+            "Papel": "=IF(Formulario!E20=\"Dos grapas tipo libreta\",B12:C12,D12:F12)",
+            "Color Vía 1": "=IF(Formulario!$E$12>=1,IF(OR(Formulario!E14=\"Obra 80gr.\",Formulario!E14=\"Obra 90gr.\"),B14,B14:G14),\"N/C\")",
+            "Color Vía 2": "=IF(Formulario!$E$12>=2,IF(OR(Formulario!E14=\"Obra 80gr.\",Formulario!E14=\"Obra 90gr.\"),B14,B14:G14),\"N/C\")",
+            "Color Vía 3": "=IF(Formulario!$E$12>=3,IF(OR(Formulario!E14=\"Obra 80gr.\",Formulario!E14=\"Obra 90gr.\"),B14,B14:G14),\"N/C\")",
+            "Color Vía 4": "=IF(Formulario!$E$12>=4,IF(OR(Formulario!E14=\"Obra 80gr.\",Formulario!E14=\"Obra 90gr.\"),B14,B14:G14),\"N/C\")",
+            "Color Vía 5": "=IF(Formulario!$E$12>=5,IF(OR(Formulario!E14=\"Obra 80gr.\",Formulario!E14=\"Obra 90gr.\"),B14,B14:G14),\"N/C\")",
+            "Nombre Vía 2": "=IF(Formulario!$E$12>=2,B19:G19,\"N/C\")",
+            "Nombre Vía 3": "=IF(Formulario!$E$12>=3,B20:G20,\"N/C\")",
+            "Nombre Vía 4": "=IF(Formulario!$E$12>=4,B21:G21,\"N/C\")",
+            "Nombre Vía 5": "=IF(Formulario!$E$12>=5,B22:G22,\"N/C\")",
+            "Impresión": "=IF(OR(Formulario!E6=\"7 Días\",(IF(Formulario!O33<>\"\",Formulario!N33+Formulario!O33,Formulario!N33*2))/1000*Formulario!N34/1000*Formulario!E10<15),{B23:C23 , Q23},B23:R23)",
+            "Emblocado": "=IF(Formulario!E20=\"Encolado\",B27:E27,E27)",
+            "Puntillado": "=IF(Formulario!E20=\"Dos grapas tipo libreta\",B28:C28,IF(AND(Formulario!E20=\"Hojas Sueltas\",max(Formulario!M33,Formulario!M34)>=210,MIN(Formulario!M33,Formulario!M34)>=148),D28:H28,H28))"
+        }
+    },
+    "Hojas Membretadas": {
+        "variables_formulario": {
+            "Tamaño": {
+                "celda": "E4",
+                "valor_ejemplo": "210x297"
+            },
+            "Orientación": {
+                "celda": "E6",
+                "valor_ejemplo": "Vertical"
+            },
+            "Cantidad (de cada uno)": {
+                "celda": "E8",
+                "valor_ejemplo": "500.0"
+            },
+            "Cantidad diferentes": {
+                "celda": "E10",
+                "valor_ejemplo": "1.0"
+            },
+            "Papel": {
+                "celda": "E12",
+                "valor_ejemplo": "Obra 80gr."
+            },
+            "Impresión": {
+                "celda": "E14",
+                "valor_ejemplo": "Tinta Primaria (Cyan, Magenta, Amarillo o Negro)"
+            },
+            "Faces": {
+                "celda": "E16",
+                "valor_ejemplo": "Simple"
+            },
+            "Impresión al vivo": {
+                "celda": "E18",
+                "valor_ejemplo": "No"
+            },
+            "Barniz": {
+                "celda": "E20",
+                "valor_ejemplo": "No"
+            },
+            "Entrega": {
+                "celda": "E22",
+                "valor_ejemplo": "5 días"
+            },
+            "Comentarios": {
+                "celda": "E24",
+                "valor_ejemplo": "None"
+            }
+        },
+        "opciones_base": {
+            "Cantidad": [
+                "10.0",
+                "20.0",
+                "50.0",
+                "100.0",
+                "200.0",
+                "300.0",
+                "500.0",
+                "1000.0"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Tamaño (cm)": [
+                "210x297",
+                "216x279",
+                "216x330",
+                "216x356"
+            ],
+            "Impresión al vivo": [
+                "Si",
+                "No"
+            ],
+            "Tipo de papel": [
+                "Obra 75gr.",
+                "Obra 80gr.",
+                "Obra 90gr.",
+                "Reciclado 75gr.",
+                "Verjurado Blanco 90gr.",
+                "Reciclado 120gr."
+            ],
+            "Tiempo de entrega": [
+                "5 días"
+            ],
+            "Tintas": [
+                "Tinta Negra fondo blanco sin grisados",
+                "Tinta Negra",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro) fondo blanco sin grisados",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro)",
+                "Tinta color lata fondo blanco sin grisados",
+                "Tinta color lata",
+                "Tinta color pantone fondo blanco sin grisados",
+                "Tinta color pantone"
+            ],
+            "Faz": [
+                "Simple",
+                "Doble"
+            ],
+            "Barniz": [
+                "UV Sectorizado SF",
+                "UV Sectorizado DF",
+                "No"
+            ]
+        },
+        "reglas_logicas": {
+            "Tintas": "=IF(Formulario!E8>=500,B7:R7,{B7:C7,Q7})",
+            "Papel": "=IF(AND(Formulario!E4=\"210x297\",Formulario!E18=\"No\"),B5:G5,{B5:D5,F5:G5})",
+            "Barniz": "=IF(Formulario!E8>=500,IF(Formulario!E16=\"Simple\",{B11,D11},C11:D11),D11)"
+        }
+    },
+    "Impresiones en plancha": {
+        "variables_formulario": {
+            "Tipo de venta": {
+                "celda": "E4",
+                "valor_ejemplo": "Al Público"
+            },
+            "Tamaño": {
+                "celda": "E6",
+                "valor_ejemplo": "330x480"
+            },
+            "Cantidad (de cada uno)": {
+                "celda": "E8",
+                "valor_ejemplo": "33.0"
+            },
+            "Cantidad de hojas diferentes": {
+                "celda": "E10",
+                "valor_ejemplo": "33.0"
+            },
+            "Papel": {
+                "celda": "E12",
+                "valor_ejemplo": "Coteado 350gr."
+            },
+            "Entrega": {
+                "celda": "E14",
+                "valor_ejemplo": "2 días"
+            },
+            "Comentarios": {
+                "celda": "E16",
+                "valor_ejemplo": "None"
+            },
+            "Contraencolado": {
+                "celda": "E18",
+                "valor_ejemplo": "No"
+            },
+            "Impresión": {
+                "celda": "E20",
+                "valor_ejemplo": "Full Color CMYK"
+            },
+            "Faces": {
+                "celda": "E22",
+                "valor_ejemplo": "Simple"
+            },
+            "Laminado": {
+                "celda": "E26",
+                "valor_ejemplo": "No"
+            },
+            "Tinta Blanca": {
+                "celda": "E28",
+                "valor_ejemplo": "No"
+            },
+            "Barniz": {
+                "celda": "E30",
+                "valor_ejemplo": "No"
+            },
+            "Corte": {
+                "celda": "E32",
+                "valor_ejemplo": "No"
+            },
+            "Tamaño final luego del corte": {
+                "celda": "E34",
+                "valor_ejemplo": "None"
+            }
+        },
+        "opciones_base": {
+            "Tipo": [
+                "Para Imprentas",
+                "Al Público"
+            ],
+            "Cantidad": [
+                "10.0",
+                "20.0",
+                "50.0",
+                "100.0",
+                "200.0",
+                "300.0",
+                "500.0",
+                "1000.0"
+            ],
+            "Tamaño (cm)": [
+                "220x310",
+                "320x350",
+                "320x470",
+                "320x690",
+                "200x287",
+                "287x410",
+                "330x480"
+            ],
+            "Tipo de papel": [
+                "Coteado 350gr.",
+                "Coteado 300gr.",
+                "Coteado 200gr.",
+                "Coteado 170gr.",
+                "Coteado 130gr.",
+                "Obra 80gr.",
+                "Reciclado 240gr.",
+                "Cartulina 250gr."
+            ],
+            "Tiempo de entrega": [
+                "2 días",
+                "10 días"
+            ],
+            "Tintas": [
+                "Tinta Negra fondo blanco sin grisados",
+                "Tinta Negra",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro) fondo blanco sin grisados",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro)",
+                "Tinta color lata fondo blanco sin grisados",
+                "Tinta color lata",
+                "Tinta color pantone fondo blanco sin grisados",
+                "Tinta color pantone"
+            ],
+            "Tinta Blanca": [
+                "Simple Faz",
+                "Doble Faz",
+                "No"
+            ],
+            "Faz": [
+                "Simple",
+                "Doble"
+            ],
+            "Barniz": [
+                "Barniz de máquina Mate SF",
+                "Barniz de máquina Mate DF",
+                "Barniz de máquina Brillo SF",
+                "Barniz de máquina Brillo DF",
+                "UV pleno SF",
+                "UV pleno DF",
+                "UV Sectorizado SF",
+                "UV Sectorizado DF"
+            ],
+            "Laminado": [
+                "Mate Simple Faz",
+                "Mate Doble Faz",
+                "Brillo Simple Faz",
+                "Brillo Doble Faz",
+                "No"
+            ],
+            "Contraencolado": [
+                "Si",
+                "No"
+            ],
+            "Corte": [
+                "Troquelado Dificultad Baja",
+                "Troquelado Dificultad Media",
+                "Troquelado Dificultad Alta",
+                "Guillotinado Dificultad Baja",
+                "Guillotinado Dificultad Media",
+                "Guillotinado Dificultad Alta",
+                "No"
+            ]
+        },
+        "reglas_logicas": {
+            "Entrega": "=B5:C5",
+            "Tintas": "=IF(AND(Formulario!E14=\"10 días\",Formulario!E6<>\"320x690\"),IF(Formulario!E4=\"Al Público\",{B6:C6 , Q6},IF(Formulario!E8>=300,B6:R6,{B6:C6 , Q6})),{B6:C6 , Q6})",
+            "Contraencolado": "=IF(OR(Formulario!E14=\"2 días\",Formulario!E6=\"200x287\",Formulario!E6=\"287x410\"),C13,B13:C13)",
+            "Papel": "=IF(Formulario!E18=\"Si\",{B4,C4,H4,I4,J4},IF(OR(Formulario!E6=\"200x287\",Formulario!E6=\"287x410\"),K4,B4:O4))",
+            "Barniz": "=IFERROR(__xludf.DUMMYFUNCTION(\"IF(Formulario!E14=\"\"2 días\"\",{J11},IF(Formulario!E22=\"\"Simple\"\",{FILTER(IF(OR(Formulario!E28<>\"\"No\"\",Formulario!E26<>\"\"No\"\"),{H11:J11},IF(OR(Formulario!E4=\"\"Al Público\"\",Formulario!E6=\"\"320x690\"\",Formulario!E8<300),{H11:J11},{B11:J11})),ISNUMBER(FIND(\"\"SF\"&\"\"\",IF(OR(Formulario!E28<>\"\"No\"\",Formulario!E26<>\"\"No\"\"),{H11:J11},IF(OR(Formulario!E4=\"\"Al Público\"\",Formulario!E6=\"\"320x690\"\",Formulario!E8<300),{H11:J11},{B11:J11}))))),J11},{FILTER(IF(OR(Formulario!E28<>\"\"No\"\",Formulario!E26<>\"\"No\"\"),{H11:J11},IF(OR(Fo\"&\"rmulario!E4=\"\"Al Público\"\",Formulario!E6=\"\"320x690\"\",Formulario!E8<300),{H11:J11},{B11:J11})),ISNUMBER(FIND(\"\"DF\"\",IF(OR(Formulario!E28<>\"\"No\"\",Formulario!E26<>\"\"No\"\"),{H11:J11},IF(OR(Formulario!E4=\"\"Al Público\"\",Formulario!E6=\"\"320x690\"\",Formulario!E8<30\"&\"0),{H11:J11},{B11:J11}))))),J11}))\"),\"No\")",
+            "Tinta Blanca": "=IF(OR(Formulario!E14=\"2 días\",Formulario!E6=\"330x480\"),D7,IF(Formulario!E22=\"Simple\",{B7,D7},C7:D7))",
+            "Corte": "=IF(Formulario!E14=\"2 días\",H14,IF(Formulario!E4=\"Al Público\",{B14:D14 , H14},B14:H14))",
+            "Laminado": "=IFERROR(__xludf.DUMMYFUNCTION(\"IF(Formulario!$E$22=\"\"Doble\"\",{FILTER(B12:E12,ISNUMBER(FIND(\"\"Doble\"\",B12:E12))) , F12},{B12:F12})\"),\"Mate Simple Faz\")"
+        }
+    },
+    "Libros": {
+        "variables_formulario": {
+            "Tipo": {
+                "celda": "E26",
+                "valor_ejemplo": "Flexible"
+            },
+            "Tiempo de entrega": {
+                "celda": "E6",
+                "valor_ejemplo": "12 Días"
+            },
+            "Orientación": {
+                "celda": "E8",
+                "valor_ejemplo": "Vertical"
+            },
+            "Borde de encuadernado": {
+                "celda": "E10",
+                "valor_ejemplo": "Largo"
+            },
+            "Tamaño Cerrado": {
+                "celda": "E12",
+                "valor_ejemplo": "220x300"
+            },
+            "Tamaño Abierto": {
+                "celda": "E14",
+                "valor_ejemplo": "44 x 30"
+            },
+            "Cantidad": {
+                "celda": "E16",
+                "valor_ejemplo": "200.0"
+            },
+            "Cantidad diferentes": {
+                "celda": "E18",
+                "valor_ejemplo": "None"
+            },
+            "Encuadernado": {
+                "celda": "E20",
+                "valor_ejemplo": "Con lomo cuadrado"
+            },
+            "Comentarios": {
+                "celda": "E22",
+                "valor_ejemplo": "None"
+            },
+            "Impresión de tapa y contratapa": {
+                "celda": "E28",
+                "valor_ejemplo": "Full Color CMYK"
+            },
+            "Impresión de retiros": {
+                "celda": "E30",
+                "valor_ejemplo": "No"
+            },
+            "Papel": {
+                "celda": "E32",
+                "valor_ejemplo": "Coteado 300gr."
+            },
+            "Faces Retiro": {
+                "celda": "E34",
+                "valor_ejemplo": "None"
+            },
+            "Tinta Blanca": {
+                "celda": "E36",
+                "valor_ejemplo": "None"
+            },
+            "Laminado": {
+                "celda": "E38",
+                "valor_ejemplo": "Mate Solo tapa y contratapa"
+            },
+            "Barniz": {
+                "celda": "E40",
+                "valor_ejemplo": "No"
+            },
+            "Termosellado individual": {
+                "celda": "E44",
+                "valor_ejemplo": "No"
+            },
+            "Marcapáginas": {
+                "celda": "E46",
+                "valor_ejemplo": "No"
+            }
+        },
+        "opciones_base": {
+            "Tipo": [
+                "Flexible",
+                "Dura",
+                "Super Dura"
+            ],
+            "Tiempo de Entrega": [
+                "7 Días",
+                "12 Días"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Borde de encuadernado": [
+                "Largo",
+                "Corto"
+            ],
+            "Tamaño Cerrado(cm)": [
+                "105x170",
+                "155x225",
+                "170x240",
+                "220x300"
+            ],
+            "Encuadernado": [
+                "Con Rulo blanco",
+                "Con Rulo negro",
+                "Con lomo cuadrado",
+                "Con dos grapas al medio"
+            ],
+            "Termosellado individual": [
+                "Si",
+                "No"
+            ],
+            "Marcapáginas": [
+                "Blanco",
+                "Negro",
+                "Especial",
+                "No"
+            ],
+            "Tipo de papel": [
+                "Coteado 350gr.",
+                "Coteado 300gr.",
+                "Cartulina 250gr.",
+                "Cartulina 270gr.",
+                "Reciclado 240gr.",
+                "Coteado 130gr."
+            ],
+            "Impresión de tapa y contratapa": [
+                "Tinta Negra fondo blanco sin grisados",
+                "Tinta Negra",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro) fondo blanco sin grisados",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro)",
+                "Tinta color lata fondo blanco sin grisados",
+                "Tinta color lata",
+                "Tinta color pantone fondo blanco sin grisados",
+                "Tinta color pantone"
+            ],
+            "Impresión de retiros": [
+                "Si",
+                "No"
+            ],
+            "Faces de Retiro": [
+                "N/C",
+                "Simple",
+                "Doble"
+            ],
+            "Tinta Blanca": [
+                "Solo tapa y contratapa",
+                "Tapas y Retiros",
+                "No"
+            ]
+        },
+        "reglas_logicas": {
+            "Borde de encuadernado": "=IF(Formulario!E8=\"Horizontal\",C5,B5)",
+            "Marcapáginas": "=IF(AND(Formulario!E26=\"Super Dura\",Formulario!E6<>\"7 Días\"),IF((IF(Formulario!O35<>\"\",Formulario!N35+Formulario!O35,Formulario!N35*2))/1000*Formulario!N36/1000*Formulario!E16<15,{B11:C11,E11},B11:E11),E11)",
+            "Tipo": "=IF(Formulario!E20=\"Con dos grapas al medio\",B14,IF(Formulario!E20=\"Con lomo cuadrado\",{B14,D14},B14:D14))",
+            "Impresión de tapa y contratapa": "=IF(OR(Formulario!E6=\"7 Días\",(IF(Formulario!O35<>\"\",Formulario!N35+Formulario!O35,Formulario!N35*2))/1000*Formulario!N36/1000*Formulario!E16<15),{B16:C16 , Q16,S16},B16:S16)",
+            "Papel": "=IF(Formulario!E26=\"Flexible\",B15:F15,IF(Formulario!E26=\"Dura\",D15:F15,G15))"
+        }
+    },
+    "Manuales": {
+        "variables_formulario": {
+            "Tipo": {
+                "celda": "E26",
+                "valor_ejemplo": "Flexible"
+            },
+            "Tiempo de entrega": {
+                "celda": "E6",
+                "valor_ejemplo": "12 Días"
+            },
+            "Orientación": {
+                "celda": "E8",
+                "valor_ejemplo": "Vertical"
+            },
+            "Borde de encuadernado": {
+                "celda": "E10",
+                "valor_ejemplo": "Largo"
+            },
+            "Tamaño Cerrado": {
+                "celda": "E12",
+                "valor_ejemplo": "165x220"
+            },
+            "Tamaño Abierto": {
+                "celda": "E14",
+                "valor_ejemplo": "=IF(E10=\"Corto\",CONCATENATE(MAX($M$31,$M$32)*2,\"x\",MIN($M$31,$M$32)),CONCATENATE(MIN($M$31,$M$32)*2,\"x\",MAX($M$31,$M$32)))"
+            },
+            "Cantidad (de cada uno)": {
+                "celda": "E16",
+                "valor_ejemplo": "500.0"
+            },
+            "Cantidad diferentes": {
+                "celda": "E18",
+                "valor_ejemplo": "2.0"
+            },
+            "Encuadernado": {
+                "celda": "E20",
+                "valor_ejemplo": "Con lomo cuadrado"
+            },
+            "Comentarios": {
+                "celda": "E22",
+                "valor_ejemplo": "None"
+            },
+            "Impresión de tapa y contratapa": {
+                "celda": "E28",
+                "valor_ejemplo": "Tinta Negra"
+            },
+            "Impresión de retiros": {
+                "celda": "E30",
+                "valor_ejemplo": "Si"
+            },
+            "Papel": {
+                "celda": "E32",
+                "valor_ejemplo": "Coteado 130gr."
+            },
+            "Faces Retiro": {
+                "celda": "E34",
+                "valor_ejemplo": "N/C"
+            },
+            "Tinta Blanca": {
+                "celda": "E36",
+                "valor_ejemplo": "No"
+            },
+            "Laminado": {
+                "celda": "E38",
+                "valor_ejemplo": "Brillo Solo tapa y contratapa"
+            },
+            "Barniz": {
+                "celda": "E40",
+                "valor_ejemplo": "No"
+            },
+            "Troquelado": {
+                "celda": "E42",
+                "valor_ejemplo": "Dificultad Alta"
+            },
+            "¿Hay troquel?": {
+                "celda": "E44",
+                "valor_ejemplo": "Si"
+            },
+            "Sobre Doble": {
+                "celda": "E48",
+                "valor_ejemplo": "Si"
+            }
+        },
+        "opciones_base": {
+            "Tipo": [
+                "Flexible",
+                "Dura",
+                "Super Dura"
+            ],
+            "Tiempo de Entrega": [
+                "7 Días",
+                "12 Días"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Borde de encuadernado": [
+                "Largo",
+                "Corto"
+            ],
+            "Tamaño Cerrado(cm)": [
+                "105x170",
+                "155x170",
+                "155x230",
+                "210x297",
+                "220x300"
+            ],
+            "Encuadernado": [
+                "Con Rulo blanco",
+                "Con Rulo negro",
+                "Con lomo cuadrado",
+                "Con dos grapas al medio"
+            ],
+            "Tipo de papel": [
+                "Coteado 350gr.",
+                "Coteado 300gr.",
+                "Coteado 200gr.",
+                "Cartulina 250gr.",
+                "Cartulina 270gr.",
+                "Reciclado 240gr.",
+                "Coteado 130gr."
+            ],
+            "Impresión de tapa y contratapa": [
+                "Tinta Negra fondo blanco sin grisados",
+                "Tinta Negra",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro) fondo blanco sin grisados",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro)",
+                "Tinta color lata fondo blanco sin grisados",
+                "Tinta color lata",
+                "Tinta color pantone fondo blanco sin grisados",
+                "Tinta color pantone"
+            ],
+            "Impresión de retiros": [
+                "Si",
+                "No"
+            ],
+            "Faces de Retiro": [
+                "N/C",
+                "Simple",
+                "Doble"
+            ],
+            "Tinta Blanca": [
+                "Solo tapa y contratapa",
+                "Tapas y Retiros",
+                "No"
+            ],
+            "Barniz": [
+                "Barniz de máquina Mate Solo tapa y contratapa",
+                "Barniz de máquina Mate en Tapas y Retiros",
+                "Barniz de máquina Brillo Solo tapa y contratapa",
+                "Barniz de máquina Brillo en Tapas y Retiros",
+                "UV pleno Solo tapa y contratapa",
+                "UV pleno en Tapas y Retiros",
+                "UV Sectorizado Solo tapa y contratapa",
+                "UV Sectorizado en Tapas y Retiros"
+            ],
+            "Laminado": [
+                "Mate Solo tapa y contratapa",
+                "Mate Tapas y Retiros",
+                "Brillo Solo tapa y contratapa",
+                "Brillo Tapas y Retiros",
+                "No"
+            ]
+        },
+        "reglas_logicas": {
+            "Borde de encuadernado": "=IF(Formulario!E8=\"Horizontal\",C5,B5)",
+            "Tamaño": "=IF(Formulario!E4=\"Cuaderno\",B6:C6,IF(Formulario!E4=\"Cuadernola\",D6:E6,IF(Formulario!E4=\"Libreta\",#REF!,#REF!)))",
+            "Encuadernado": "=IF(Formulario!E4=\"Libreta de bolsillo\",{B7:C7,E7},B7:E7)",
+            "Sobre Doble": "=IF(Formulario!E20<>\"Con dos grapas al medio\",#REF!,#REF!)",
+            "Cierre Elástico": "=IF(AND(Formulario!E26<>\"Flexible\",Formulario!E6<>\"7 Días\"),IF((IF(Formulario!O31<>\"\",Formulario!N31+Formulario!O31,Formulario!N31*2))/1000*Formulario!N32/1000*Formulario!E16<15,{#REF!,#REF!},#REF!),#REF!)",
+            "Elástico para lapicera": "=IF(AND(Formulario!E26<>\"Flexible\",Formulario!E6<>\"7 Días\"),IF((IF(Formulario!O31<>\"\",Formulario!N31+Formulario!O31,Formulario!N31*2))/1000*Formulario!N32/1000*Formulario!E16<15,{#REF!,#REF!},#REF!),#REF!)",
+            "Marcapáginas": "=IF(AND(Formulario!E26=\"Super Dura\",Formulario!E6<>\"7 Días\"),IF((IF(Formulario!O31<>\"\",Formulario!N31+Formulario!O31,Formulario!N31*2))/1000*Formulario!N32/1000*Formulario!E16<15,{#REF!,#REF!},#REF!),#REF!)",
+            "Solapa con Cierre Velcro": "=IF(AND(Formulario!E26<>\"Flexible\",Formulario!E6<>\"7 Días\",(IF(Formulario!O31<>\"\",Formulario!N31+Formulario!O31,Formulario!N31*2))/1000*Formulario!N32/1000*Formulario!E16>=15),#REF!,#REF!)",
+            "Redondeado de puntas": "=IF(Formulario!E26=\"Flexible\",IF(Formulario!E6=\"12 Días\",#REF!,#REF!),#REF!)",
+            "Tipo": "=IF(Formulario!E20=\"Con dos grapas al medio\",B10,IF(Formulario!E20=\"Con lomo\",{B10,D10},B10:D10))",
+            "Impresión de tapa y contratapa": "=IF(OR(Formulario!E6=\"7 Días\",(IF(Formulario!O31<>\"\",Formulario!N31+Formulario!O31,Formulario!N31*2))/1000*Formulario!N32/1000*Formulario!E16<15),{B12:C12 , Q12,S12},B12:S12)",
+            "Papel": "=IF(Formulario!E26=\"Flexible\",B11:G11,IF(Formulario!E26=\"Dura\",E11:G11,H11))",
+            "Impresión de retiros": "=B13:C13"
+        }
+    },
+    "Revistas": {
+        "variables_formulario": {
+            "Tipo": {
+                "celda": "E4",
+                "valor_ejemplo": "Revistas"
+            },
+            "Tiempo de entrega": {
+                "celda": "E6",
+                "valor_ejemplo": "7 Días"
+            },
+            "Orientación": {
+                "celda": "E8",
+                "valor_ejemplo": "Vertical"
+            },
+            "Borde de encuadernado": {
+                "celda": "E10",
+                "valor_ejemplo": "Largo"
+            },
+            "Tamaño Cerrado": {
+                "celda": "E12",
+                "valor_ejemplo": "27,5 x 20,5"
+            },
+            "Tamaño Abierto": {
+                "celda": "E14",
+                "valor_ejemplo": "=IF(E10=\"Corto\",CONCATENATE(MAX($M$31,$M$32)*2,\"x\",MIN($M$31,$M$32)),CONCATENATE(MIN($M$31,$M$32)*2,\"x\",MAX($M$31,$M$32)))"
+            },
+            "Cantidad": {
+                "celda": "E16",
+                "valor_ejemplo": "120.0"
+            },
+            "Cantidad diferentes": {
+                "celda": "E18",
+                "valor_ejemplo": "None"
+            },
+            "Encuadernado": {
+                "celda": "E20",
+                "valor_ejemplo": "Con dos grapas al medio"
+            },
+            "Comentarios": {
+                "celda": "E22",
+                "valor_ejemplo": "None"
+            },
+            "Impresión de tapa y contratapa": {
+                "celda": "E26",
+                "valor_ejemplo": "Full Color CMYK"
+            },
+            "Impresión de retiros": {
+                "celda": "E28",
+                "valor_ejemplo": "Si"
+            },
+            "Papel": {
+                "celda": "E44",
+                "valor_ejemplo": "Coteado 130gr."
+            },
+            "Tinta Blanca": {
+                "celda": "E32",
+                "valor_ejemplo": "No"
+            },
+            "Laminado": {
+                "celda": "E34",
+                "valor_ejemplo": "Brillo Tapas y Retiros"
+            },
+            "Barniz": {
+                "celda": "E36",
+                "valor_ejemplo": "No"
+            },
+            "Redondeado de puntas": {
+                "celda": "E40",
+                "valor_ejemplo": "No"
+            },
+            "Cantidad de páginas": {
+                "celda": "E46",
+                "valor_ejemplo": "34.0"
+            },
+            "Impresión": {
+                "celda": "E48",
+                "valor_ejemplo": "Full Color CMYK"
+            }
+        },
+        "opciones_base": {
+            "Tipo": [
+                "Revistas"
+            ],
+            "Tiempo de Entrega": [
+                "7 Días",
+                "12 Días"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Borde de encuadernado": [
+                "Largo",
+                "Corto"
+            ],
+            "Tamaño Cerrado(cm)": [
+                "105x170",
+                "155x225",
+                "170x240",
+                "220x300"
+            ],
+            "Encuadernado": [
+                "Con Rulo blanco",
+                "Con Rulo negro",
+                "Con lomo cuadrado",
+                "Con dos grapas al medio"
+            ],
+            "Redondeado de puntas": [
+                "Si",
+                "No"
+            ],
+            "Tipo de papel": [
+                "Coteado 350gr.",
+                "Coteado 300gr.",
+                "Coteado 250gr.",
+                "Coteado 170gr.",
+                "Reciclado 240gr.",
+                "Cartulina 250gr.",
+                "Cartulina 270gr."
+            ],
+            "Impresión de tapa y contratapa": [
+                "Tinta Negra fondo blanco sin grisados",
+                "Tinta Negra",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro) fondo blanco sin grisados",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro)",
+                "Tinta color lata fondo blanco sin grisados",
+                "Tinta color lata",
+                "Tinta color pantone fondo blanco sin grisados",
+                "Tinta color pantone"
+            ],
+            "Impresión de retiros": [
+                "Si",
+                "No"
+            ],
+            "Tinta Blanca": [
+                "Solo tapa y contratapa",
+                "Tapas y Retiros",
+                "No"
+            ],
+            "Barniz": [
+                "Barniz de máquina Mate Solo tapa y contratapa",
+                "Barniz de máquina Mate en Tapas y Retiros",
+                "Barniz de máquina Brillo Solo tapa y contratapa",
+                "Barniz de máquina Brillo en Tapas y Retiros",
+                "UV pleno Solo tapa y contratapa",
+                "UV pleno en Tapas y Retiros",
+                "UV Sectorizado Solo tapa y contratapa",
+                "UV Sectorizado en Tapas y Retiros"
+            ]
+        },
+        "reglas_logicas": {
+            "Borde de encuadernado": "=B5:C5",
+            "Redondeado de puntas": "=IF(Formulario!E6<>\"7 Días\",B10:C10,C10)",
+            "Impresión de tapa y contratapa": "=IF(OR(Formulario!E6=\"7 Días\",(IF(Formulario!O31<>\"\",Formulario!N31+Formulario!O31,Formulario!N31*2))/1000*Formulario!N32/1000*Formulario!E16<15),{B14:C14 , Q14,S14},B14:S14)",
+            "Papel": "=B13:H13",
+            "Impresión de retiros": "=B15:C15",
+            "Tinta Blanca": "=IF(Formulario!E6=\"7 Días\",D16,IF(Formulario!E28=\"Si\",C16:D16,{B16,D16}))"
+        }
+    },
+    "Señaletica Plana (carteles planos)": {
+        "variables_formulario": {
+            "Material": {
+                "celda": "E4",
+                "valor_ejemplo": "Imán"
+            },
+            "Espesor": {
+                "celda": "E6",
+                "valor_ejemplo": "0,4mm"
+            },
+            "Tipo de trabajo": {
+                "celda": "E8",
+                "valor_ejemplo": "Impreso"
+            },
+            "Tintas Impresión o grabado": {
+                "celda": "E10",
+                "valor_ejemplo": "N/C"
+            },
+            "Tipo del vinilo de corte": {
+                "celda": "E12",
+                "valor_ejemplo": "N/C"
+            },
+            "Categoría del Color del vinilo de corte": {
+                "celda": "E14",
+                "valor_ejemplo": "N/C"
+            },
+            "Color del Vinilo": {
+                "celda": "E16",
+                "valor_ejemplo": "N/C"
+            },
+            "Color del Material": {
+                "celda": "E18",
+                "valor_ejemplo": "Amarillo"
+            },
+            "Orientación": {
+                "celda": "E20",
+                "valor_ejemplo": "Horizontal"
+            },
+            "Tamaño Cerrado (mm)": {
+                "celda": "E22",
+                "valor_ejemplo": "300x400"
+            },
+            "Cantidad (de cada uno)": {
+                "celda": "E24",
+                "valor_ejemplo": "400.0"
+            },
+            "Cantidad diferentes": {
+                "celda": "E26",
+                "valor_ejemplo": "4.0"
+            },
+            "Faces": {
+                "celda": "E28",
+                "valor_ejemplo": "Simple"
+            },
+            "Para pegar o colgar": {
+                "celda": "E30",
+                "valor_ejemplo": "No"
+            },
+            "Troquelado": {
+                "celda": "E32",
+                "valor_ejemplo": "No"
+            },
+            "Comentarios": {
+                "celda": "E34",
+                "valor_ejemplo": "None"
+            }
+        },
+        "opciones_base": {
+            "Material": [
+                "Vinilo",
+                "Imán",
+                "Carton Plast",
+                "Sintra",
+                "Aluminio Compuesto",
+                "Acrílico"
+            ],
+            "Espesor": [
+                "N/C",
+                "0",
+                "4mm",
+                "0",
+                "8mm para auto",
+                "1mm",
+                "2mm",
+                "3mm",
+                "4mm",
+                "5mm"
+            ],
+            "Tipo de trabajo": [
+                "Con vinilo de corte",
+                "Impreso",
+                "Con grabado laser"
+            ],
+            "Terminación del vinilo de corte": [
+                "Mate",
+                "Brillo",
+                "Fluorescente",
+                "De pared",
+                "Esmerilado",
+                "Fotoluminiscente",
+                "Reflectivo",
+                "Microperforado"
+            ],
+            "Categoría del Color del vinilo de corte": [
+                "Amarillo y Naranja",
+                "Rojo y Rosa",
+                "Azul",
+                "Violeta",
+                "Turques y Celeste",
+                "Verde",
+                "Blanco",
+                "Negro y Gris",
+                "Otros",
+                "N/C"
+            ],
+            "Color del vinilo de corte": [
+                "526 Amarillo Piedra",
+                "527 Amarillo Mantequilla",
+                "504 Amarillo prímula",
+                "516 Naranja claro",
+                "509 Naranja",
+                "514 Rojo amapola",
+                "523 Rojo Medio",
+                "511 Rojo cereza"
+            ],
+            "Color del vinilo de pared": [
+                "501MR blanco",
+                "502MR negro",
+                "505MR Gris",
+                "506MR Azul Media Noche",
+                "513MR Azul Océano",
+                "515MR Azul Cielo",
+                "517MR Verde Bosque",
+                "519MR verde"
+            ],
+            "Color del vinilo fluorescente": [
+                "Amarillo",
+                "Naranja",
+                "Verde",
+                "Rojo",
+                "Magenta",
+                "Rosado"
+            ],
+            "Color de vinilos reflectivos": [
+                "Rojo",
+                "Blanco",
+                "Amarillo",
+                "Azul",
+                "Verde",
+                "Naranja"
+            ],
+            "Color de acrílicos": [
+                "Negro",
+                "Amarillo",
+                "Azul",
+                "Verde",
+                "Rojo"
+            ],
+            "Color de carton plast": [
+                "Negro",
+                "Blanco"
+            ],
+            "Color del sintra": [
+                "Blanco",
+                "Rojo",
+                "Azul",
+                "Verde",
+                "Amarillo",
+                "Negro",
+                "Gris"
+            ],
+            "Color del aluminio compuesto": [
+                "Blanco",
+                "Negro",
+                "Plata metalizada",
+                "gris plata"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Faz": [
+                "Simple",
+                "Doble"
+            ]
+        },
+        "reglas_logicas": {
+            "Espesor": "=if(Formulario!E4=B2,B3,if(Formulario!E4=C2,C3:D3,if(Formulario!E4=D2,G3,if(Formulario!E4=E2,{E3,G3,I3,K3},if(Formulario!E4=F2,B3,if(Formulario!E4=G2,F3:J3,\"Error en material\"))))))",
+            "Tipo de trabajo": "=if(Formulario!E4=B2,B4:C4,if(Formulario!E4=C2,B4:C4,if(Formulario!E4=D2,B4,if(Formulario!E4=E2,B4:C4,if(Formulario!E4=F2,{B4,D4},if(Formulario!E4=G2,{B4,D4},\"Error en material\"))))))",
+            "Terminación del vinilo de corte": "=if(Formulario!E4=B2,if(Formulario!E8=B4,B5:H5,{B5:C5,I5}),if(Formulario!E8=\"Con vinilo de corte\",{B5:D5,F5:H5},J5))",
+            "Categoría del Color del vinilo de corte": "=if(or(Formulario!E12=B5,Formulario!E12=C5,Formulario!E12=E5),if(Formulario!E8=C4,H6,B6:G6),H6)",
+            "Color del Vinilo": "=IFERROR(__xludf.DUMMYFUNCTION(\"if(and(Formulario!E4=B2,Formulario!E8=C4),AJ7,if(OR(Formulario!E12=B5,Formulario!E12=C5),TRANSPOSE(filter('Colores y categorias'!B:B,'Colores y categorias'!A:A=Formulario!E14)),if(Formulario!E12=D5,{B9:Q9},if(Formulario!E12=E5,TRANSPOSE(filter('Colores y \"&\"categorias'!C:C,'Colores y categorias'!A:A=Formulario!E14)),if(Formulario!E12=F5,\"\"N/C\"\",if(Formulario!E12=G5,\"\"N/C\"\",if(or(Formulario!E12=H5,Formulario!E12=I5),{B10:Q10},\"\"N/C\"\")))))))\"),\"N/C\")",
+            "Color del material": "=if(Formulario!E4=B2,\"N/C\",if(Formulario!E4=C2,\"N/C\",if(Formulario!E4=D2,B12:P12,if(Formulario!E4=E2,if(Formulario!E6=\"3mm\",B13:P13,B13),if(Formulario!E4=F2,B14:M14,if(Formulario!E4=G2,B11:P11,\"Error en el material\"))))))",
+            "Tamaños máximos posibles": "=IFERROR(__xludf.DUMMYFUNCTION(\"TRANSPOSE(arrayformula(if(Formulario!E4=C2,filter(Caracteristicas!L2:L972,Caracteristicas!L2:L972<>\"\"\"\"),if(Formulario!E4=D2,filter(Caracteristicas!J2:J972,Caracteristicas!J2:J972<>\"\"\"\"),if(Formulario!E4=E2,filter(Caracteristicas!I2:I972,Caracteristicas!I\"&\"2:I972<>\"\"\"\"),if(Formulario!E4=F2,filter(Caracteristicas!H2:H972,Caracteristicas!H2:H972<>\"\"\"\"),if(Formulario!E4=G2,filter(Caracteristicas!K2:K972,Caracteristicas!K2:K972<>\"\"\"\"),\"\"999999x9999999\"\")))))))\"),\"900x15000\")",
+            "El tamaño elegido entra en el del material?": "=IFERROR(__xludf.DUMMYFUNCTION(\"if(B37<>\"\"\"\", and(min(split(Formulario!$E$22,\"\"x\"\"))<min(arrayformula(split(B37,\"\"x\"\",false))),max(split(Formulario!$E$22,\"\"x\"\"))<MAX(arrayformula(split(B37,\"\"x\"\",false)))),false)\"),TRUE)",
+            "El tamaño elegido entra en el de algún material?": "=or(B38:Q38)",
+            "El lado más chico tiene que medir máximo": "=IFERROR(__xludf.DUMMYFUNCTION(\"if(or(Formulario!E12=B5,Formulario!E12=C5,,Formulario!E12=E5,,Formulario!E12=F5,,Formulario!E12=H5),min(split(Caracteristicas!A3,\"\"x\"\"))-2,if(or(Formulario!E12=D5,Formulario!E12=G5),min(split(Caracteristicas!G3,\"\"x\"\"))-2,100000))\"),100000.0)",
+            "El lado más chico es más chico que el máximo?": "=IFERROR(__xludf.DUMMYFUNCTION(\"if(B40<>\"\"\"\", min(split(Formulario!$E$22,\"\"x\"\"))<B40,false)\"),TRUE)",
+            "Se puede aceptar este tamaño?": "=AND(B41,B39)",
+            "Faz": "=if(or(Formulario!E4=B2,Formulario!E4=C2,Formulario!E4=F2),B17,B17:C17)",
+            "Para pegar o colgar": "=if(or(Formulario!E4=D2,Formulario!E4=E2),B20:K20,if(or(Formulario!E4=G2,Formulario!E4=F2),{F20:G20,J20:K20},K20))",
+            "Troquelado": "=if(or(Formulario!E4=B2,Formulario!E4=C2,Formulario!E4=D2,Formulario!E4=E2),B21:E21,E21)",
+            "Tintas": "=if(Formulario!E8=C4,B22:R22,if(Formulario!E8=D4,{\"Blanco\",\"Negro\"},\"N/C\"))"
+        }
+    },
+    "Stickers Blancos Impresos": {
+        "variables_formulario": {
+            "Tipo": {
+                "celda": "E4",
+                "valor_ejemplo": "Sticker para exterior"
+            },
+            "Orientación": {
+                "celda": "E6",
+                "valor_ejemplo": "Horizontal"
+            },
+            "Tamaño": {
+                "celda": "E8",
+                "valor_ejemplo": "375x890"
+            },
+            "Cantidad (de cada uno)": {
+                "celda": "E10",
+                "valor_ejemplo": "1000.0"
+            },
+            "Cantidad diferentes": {
+                "celda": "E12",
+                "valor_ejemplo": "None"
+            },
+            "Papel": {
+                "celda": "E14",
+                "valor_ejemplo": "BOPP fondo Blanco"
+            },
+            "Entrega": {
+                "celda": "E16",
+                "valor_ejemplo": "10 días"
+            },
+            "Comentarios": {
+                "celda": "E18",
+                "valor_ejemplo": "None"
+            },
+            "Impresión": {
+                "celda": "E20",
+                "valor_ejemplo": "Tinta color lata"
+            },
+            "Faces": {
+                "celda": "E22",
+                "valor_ejemplo": "Simple"
+            },
+            "Tinta Blanca": {
+                "celda": "E26",
+                "valor_ejemplo": "No"
+            },
+            "Barniz": {
+                "celda": "E28",
+                "valor_ejemplo": "No"
+            },
+            "Troquelado": {
+                "celda": "E30",
+                "valor_ejemplo": "Troquelado Dificultad Baja"
+            }
+        },
+        "opciones_base": {
+            "Tipo de trabajo": [
+                "Sticker para interior",
+                "Sticker para exterior"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Tipo de papel": [
+                "Papel Adhesivo fondo Blanco",
+                "BOPP fondo Blanco",
+                "Mineral Autoadhesivo",
+                "Papel adhesivo Gofrado"
+            ],
+            "Tamaño (mm)": [
+                "20x20",
+                "20x30",
+                "20x40",
+                "20x50",
+                "25x30",
+                "25x40",
+                "25x50",
+                "25x60"
+            ],
+            "Tiempo de entrega": [
+                "3 días",
+                "10 días"
+            ],
+            "Tintas": [
+                "Tinta Negra fondo blanco sin grisados",
+                "Tinta Negra",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro) fondo blanco sin grisados",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro)",
+                "Tinta color lata fondo blanco sin grisados",
+                "Tinta color lata",
+                "Tinta color pantone fondo blanco sin grisados",
+                "Tinta color pantone"
+            ],
+            "Tinta Blanca": [
+                "Simple Faz",
+                "No"
+            ],
+            "Faz": [
+                "Simple"
+            ],
+            "Barniz": [
+                "UV Sectorizado SF",
+                "UV Pleno SF",
+                "No"
+            ],
+            "Troquelado": [
+                "Troquelado Dificultad Baja",
+                "Troquelado Dificultad Media",
+                "Troquelado Dificultad Alta",
+                "No"
+            ]
+        },
+        "reglas_logicas": {
+            "Tipo de papel": "=if(Formulario!E4=\"Sticker para interior\",B4:C4,C4)",
+            "Barniz": "=IF(Formulario!E16=\"3 Días\",D12,B12:D12)",
+            "Tinta Blanca": "=IF(Formulario!E16=\"3 Días\",C8,B8:C8)",
+            "Troquelado": "=IFERROR(__xludf.DUMMYFUNCTION(\"IF(Formulario!E16=\"\"3 Días\"\",if(ARRAYFORMULA(split(Formulario!E8,\"\"x\"\")<=30),\"\"Error use un tamaño de sticker mayor a 30x30\"\",{E13}),if(ARRAYFORMULA(split(Formulario!E8,\"\"x\"\")<=30),{B13:D13},{B13:E13}))\"),\"Troquelado Dificultad Baja\")"
+        }
+    },
+    "Stickers Transparentes Impresos": {
+        "variables_formulario": {
+            "Tipo": {
+                "celda": "E4",
+                "valor_ejemplo": "Sticker para pegar desde el exterior"
+            },
+            "Orientación": {
+                "celda": "E6",
+                "valor_ejemplo": "None"
+            },
+            "Tamaño": {
+                "celda": "E8",
+                "valor_ejemplo": "65x155"
+            },
+            "Cantidad (de cada uno)": {
+                "celda": "E10",
+                "valor_ejemplo": "30.0"
+            },
+            "Cantidad diferentes": {
+                "celda": "E12",
+                "valor_ejemplo": "1.0"
+            },
+            "Papel": {
+                "celda": "E14",
+                "valor_ejemplo": "BOPP Transparente"
+            },
+            "Entrega": {
+                "celda": "E16",
+                "valor_ejemplo": "10 días"
+            },
+            "Comentarios": {
+                "celda": "E18",
+                "valor_ejemplo": "None"
+            },
+            "Impresión": {
+                "celda": "E20",
+                "valor_ejemplo": "Full Color CMYK"
+            },
+            "Faces": {
+                "celda": "E22",
+                "valor_ejemplo": "Simple"
+            },
+            "Tinta Blanca": {
+                "celda": "E26",
+                "valor_ejemplo": "None"
+            },
+            "Troquelado": {
+                "celda": "E28",
+                "valor_ejemplo": "No"
+            }
+        },
+        "opciones_base": {
+            "Tipo de trabajo": [
+                "Sticker para pegar desde el interior",
+                "Sticker para pegar desde el exterior"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Tipo de papel": [
+                "BOPP Transparente"
+            ],
+            "Tamaño (mm)": [
+                "20x20",
+                "20x30",
+                "20x40",
+                "20x50",
+                "25x30",
+                "25x40",
+                "25x50",
+                "25x60"
+            ],
+            "Tiempo de entrega": [
+                "3 días",
+                "10 días"
+            ],
+            "Tintas": [
+                "Tinta Negra fondo blanco sin grisados",
+                "Tinta Negra",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro) fondo blanco sin grisados",
+                "Tinta Primaria (Cyan",
+                "Magenta",
+                "Amarillo o Negro)",
+                "Tinta color lata fondo blanco sin grisados",
+                "Tinta color lata",
+                "Tinta color pantone fondo blanco sin grisados",
+                "Tinta color pantone"
+            ],
+            "Tinta Blanca": [
+                "Simple Faz",
+                "No"
+            ],
+            "Faz": [
+                "Simple"
+            ],
+            "Troquelado": [
+                "Troquelado Dificultad Baja",
+                "Troquelado Dificultad Media",
+                "Troquelado Dificultad Alta",
+                "No"
+            ]
+        },
+        "reglas_logicas": {
+            "Tipo de papel": "=if(Formulario!E4=\"Sticker para interior\",B4,B4)",
+            "Tinta Blanca": "=IF(Formulario!E16=\"3 Días\",C8,B8:C8)",
+            "Troquelado": "=IFERROR(__xludf.DUMMYFUNCTION(\"IF(Formulario!E16=\"\"3 Días\"\",if(ARRAYFORMULA(split(Formulario!E8,\"\"x\"\")<=30),\"\"Error use un tamaño de sticker mayor a 30x30\"\",{E12}),if(ARRAYFORMULA(split(Formulario!E8,\"\"x\"\")<=30),{B12:D12},{B12:E12}))\"),\"Troquelado Dificultad Baja\")"
+        }
+    },
+    "Tarjetas": {
+        "variables_formulario": {
+            "Tipo Trabajo": {
+                "celda": "E4",
+                "valor_ejemplo": "Tarjeta de Invitación"
+            },
+            "Tipo de tarjeta": {
+                "celda": "E6",
+                "valor_ejemplo": "N/C"
+            },
+            "Doblado": {
+                "celda": "E8",
+                "valor_ejemplo": "N/C"
+            },
+            "Borde Doblado": {
+                "celda": "E10",
+                "valor_ejemplo": "N/C"
+            },
+            "Orientación": {
+                "celda": "E12",
+                "valor_ejemplo": "Horizontal"
+            },
+            "Tamaño Cerrado": {
+                "celda": "E14",
+                "valor_ejemplo": "170x155"
+            },
+            "Tamaño Abierto": {
+                "celda": "E16",
+                "valor_ejemplo": "=IF(E8<>\"N/C\",IF(E10=\"Corto\",CONCATENATE(MAX($M$35,$M$36)*2+IF(E8=\"Tipo ventana\",ROUNDUP(MAX(15,MAX($M$35,$M$36)*0.1),0),0),\"x\",MIN($M$35,$M$36)),CONCATENATE(MIN($M$35,$M$36)*2+IF(E8=\"Tipo ventana\",ROUNDUP(MAX(15,MIN($M$35,$M$36)*0.1),0),0),\"x\",MAX($M$35,$M$36))),E14)"
+            },
+            "Cantidad (de cada uno)": {
+                "celda": "E18",
+                "valor_ejemplo": "1500.0"
+            },
+            "Cantidad diferentes": {
+                "celda": "E20",
+                "valor_ejemplo": "si 10 cambios"
+            },
+            "Papel": {
+                "celda": "E22",
+                "valor_ejemplo": "Coteado 350gr."
+            },
+            "Color del papel": {
+                "celda": "E24",
+                "valor_ejemplo": "Blanco"
+            },
+            "Entrega": {
+                "celda": "E26",
+                "valor_ejemplo": "10 días"
+            },
+            "Comentarios": {
+                "celda": "E28",
+                "valor_ejemplo": "None"
+            },
+            "Contraencolado": {
+                "celda": "E30",
+                "valor_ejemplo": "no"
+            },
+            "Impresión": {
+                "celda": "E32",
+                "valor_ejemplo": "Full Color CMYK"
+            },
+            "Faces": {
+                "celda": "E34",
+                "valor_ejemplo": "Simple"
+            },
+            "Laminado": {
+                "celda": "E38",
+                "valor_ejemplo": "No"
+            },
+            "Tinta Blanca": {
+                "celda": "E40",
+                "valor_ejemplo": "No"
+            },
+            "Barniz": {
+                "celda": "E42",
+                "valor_ejemplo": "No"
+            },
+            "Troquelado": {
+                "celda": "E44",
+                "valor_ejemplo": "No"
+            },
+            "Redondeado": {
+                "celda": "E46",
+                "valor_ejemplo": "No"
+            },
+            "Superior Derecha": {
+                "celda": "E48",
+                "valor_ejemplo": "No"
+            }
+        },
+        "opciones_base": {
+            "Tipo de trabajo": [
+                "Tarjeta Personal",
+                "Tarjeta de Invitación",
+                "Postal"
+            ],
+            "Tipo de Tarjeta": [
+                "Tarjetón",
+                "Díptico"
+            ],
+            "Doblado": [
+                "Al medio",
+                "Tipo ventana"
+            ],
+            "Borde doblado": [
+                "Largo",
+                "Corto"
+            ],
+            "Orientación": [
+                "Vertical",
+                "Horizontal"
+            ],
+            "Tamaño (cm)": [
+                "90x54",
+                "90x50",
+                "85x50",
+                "80x55",
+                "85x60",
+                "104x55",
+                "110x155",
+                "155x170"
+            ],
+            "Tipo de papel": [
+                "Coteado 350gr.",
+                "Coteado 300gr.",
+                "Cartulina 250gr.",
+                "Opalina 240gr.",
+                "Reciclado 240gr.",
+                "Obra 210gr.",
+                "Opalina telada 240gr.",
+                "Cartulina Magic Color Textuara 180gr."
+            ],
+            "Color del papel": [
+                "Blanco",
+                "Amarillo",
+                "Aceituna",
+                "Arena",
+                "Azul",
+                "Celeste",
+                "Crema",
+                "Lila"
+            ],
+            "Tiempo de entrega": [
+                "3 días",
+                "10 días"
+            ],
+            "Tintas": [
+                "Tinta Negra fondo blanco sin grisados",
+                "Tinta Negra",
+                "Full Color CMYK"
+            ],
+            "Tinta Blanca": [
+                "Simple Faz",
+                "Doble Faz",
+                "No"
+            ],
+            "Faz": [
+                "Simple",
+                "Doble"
+            ],
+            "Barniz": [
+                "UV Sectorizado SF",
+                "UV Sectorizado DF",
+                "No"
+            ],
+            "Laminado": [
+                "Mate Simple Faz",
+                "Mate Doble Faz",
+                "Brillo Simple Faz",
+                "Brillo Doble Faz",
+                "No"
+            ],
+            "Contraencolado": [
+                "Si",
+                "No"
+            ],
+            "Troquelado": [
+                "Troquelado Dificultad Baja",
+                "Troquelado Dificultad Media",
+                "Troquelado Dificultad Alta",
+                "No"
+            ]
+        },
+        "reglas_logicas": {
+            "Superior Derecha": "=IF(Formulario!$E$46=\"Algunas\",'Caracteristicas producto'!B21:C21,IF(Formulario!$E$46=\"Todas\",'Caracteristicas producto'!B21,'Caracteristicas producto'!C21))",
+            "Superior Izquierda": "=+IF(Formulario!$E$46=\"Algunas\",'Caracteristicas producto'!B22:C22,IF(Formulario!$E$46=\"Todas\",'Caracteristicas producto'!B22,'Caracteristicas producto'!C22))",
+            "Inferior Derecha": "=+IF(Formulario!$E$46=\"Algunas\",'Caracteristicas producto'!B23:C23,IF(Formulario!$E$46=\"Todas\",'Caracteristicas producto'!B23,'Caracteristicas producto'!C23))",
+            "Inferior Izquierda": "=+IF(Formulario!$E$46=\"Algunas\",'Caracteristicas producto'!B24:C24,IF(Formulario!$E$46=\"Todas\",'Caracteristicas producto'!B24,'Caracteristicas producto'!C24))",
+            "Borde Doblado": "=+IF(Formulario!E6=\"Díptico\",'Caracteristicas producto'!B5:C5,\"N/C\")",
+            "Doblado": "=+IF(Formulario!E6=\"Díptico\",'Caracteristicas producto'!B4:C4,\"N/C\")",
+            "Tipo de Tarjeta": "=+IF(Formulario!E4=\"Tarjeta de Invitación\",'Caracteristicas producto'!B3:C3,\"N/C\")",
+            "Barniz": "=IFERROR(__xludf.DUMMYFUNCTION(\"ARRAYFORMULA(IF(Formulario!E26=\"\"3 Días\"\",D16,IF(Formulario!E34=\"\"Simple\"\",Split(TEXTJOIN(\"\",\"\",TRUE,FILTER(B16:D16,ISNUMBER(FIND(\"\"SF\"\",B16:D16))),D16),\"\",\"\"),Split(TEXTJOIN(\"\",\"\",TRUE,FILTER(B16:D16,ISNUMBER(FIND(\"\"DF\"\",B16:D16))),D16),\"\",\"\"))))\"),\"UV Sectorizado SF\")",
+            "Tinta Blanca": "=IF(Formulario!E26=\"3 Días\",D12,IF(Formulario!E34=\"Simple\",IF(COUNTIF({F9,I9,J9,M9,N9,O9,P9,T9,U9},Formulario!E24)>0,B12,{B12,D12}),IF(COUNTIF({F9,I9,J9,M9,N9,O9,P9,T9,U9},Formulario!E24)>0,C12,{C12,D12})))",
+            "Laminado": "=IFERROR(__xludf.DUMMYFUNCTION(\"ARRAYFORMULA(IF(Formulario!$E$34=\"\"Doble\"\",Split(TEXTJOIN(\"\",\"\",TRUE,FILTER(B17:E17,ISNUMBER(FIND(\"\"Doble\"\",B17:E17))),F17),\"\",\"\"),B17:F17))\"),\"Mate Simple Faz\")",
+            "Tamaño": "=IF(Formulario!E4=\"Tarjeta Personal\",'Caracteristicas producto'!B7:G7,IF(Formulario!E4=\"Postal\",'Caracteristicas producto'!H7:I7,IF(Formulario!E6=\"Tarjetón\",'Caracteristicas producto'!H7:K7,'Caracteristicas producto'!L7:M7)))",
+            "Contraencolado": "=IF(Formulario!E26=\"3 Días\",C18,IF(Formulario!E8=\"N/C\",'Caracteristicas producto'!B18:C18,'Caracteristicas producto'!C18))",
+            "Redondeado de puntas": "=IF(Formulario!E26=\"3 Días\",D20,IF(Formulario!E8=\"N/C\",'Caracteristicas producto'!B20:D20,'Caracteristicas producto'!C20:D20))",
+            "Color del papel": "=IF(Formulario!E22=\"Cartulina Magic Color Textuara 180gr.\",C9:U9,B9)",
+            "Impresion": "=IF(Formulario!E40<>\"No\",D11,B11:D11)"
+        }
+    }
+}
