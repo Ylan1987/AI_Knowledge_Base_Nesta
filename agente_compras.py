@@ -751,9 +751,10 @@ class AgenteComprasNesta:
             return False
 
         catalog_json = json.dumps(self.odoo.env['product.product'].search_read([('purchase_ok', '=', True)], ['id', 'name'], limit=500), separators=(',', ':'))
+        accounts_json = json.dumps(self.odoo.env['account.account'].search_read([('account_type', '=', 'expense')], ['id', 'name', 'code'], limit=500), separators=(',', ':'))
         with open('PROMPT_AGENTE_COMPRAS.md', 'r', encoding='utf-8') as f: p_m = f.read()
 
-        prompt_init = f"{p_m}\nCatálogo: {catalog_json}\nExtrae los datos básicos y líneas de este documento."
+        prompt_init = f"{p_m}\nCatálogo de Productos: {catalog_json}\nCatálogo de Cuentas de Gasto: {accounts_json}\nExtrae los datos básicos y líneas de este documento."
         mapping = self.llamar_ia(prompt_init, attachments=[factura_att])
         
         if not isinstance(mapping, dict):
