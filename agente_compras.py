@@ -919,6 +919,10 @@ class AgenteComprasNesta:
                 
             mapping = self.llamar_ia(f"{p_m}\nXML: {json.dumps(d, separators=(',', ':'))}\nHistorial: {json.dumps(ctx['historial'], separators=(',', ':'))}\nCatálogo: {catalog_json}")
             
+            if not isinstance(mapping, dict) or not mapping:
+                logging.warning(f"⚠️ Documento {d.get('serie')}-{d.get('numero')}: La IA no devolvió un JSON válido. Se omitirá el procesamiento inteligente de este CFE.")
+                continue
+
             # VINCULACIÓN XML-DRIVER: El XML manda sobre las líneas, la IA etiqueta.
             final_lines = []
             ia_suggestions = list(mapping.get('lineas', []))
