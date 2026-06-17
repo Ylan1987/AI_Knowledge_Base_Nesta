@@ -139,7 +139,7 @@ class DispatcherNesta:
             try:
                 from ucfe_connector import UCFESyncBot
                 bot = UCFESyncBot()
-                bot.sincronizar_todo(dias=3)
+                bot.sincronizar_todo(dias=7)
             except Exception as e:
                 logging.exception("Error en UCFE:")
 
