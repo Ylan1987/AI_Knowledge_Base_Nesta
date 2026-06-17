@@ -680,26 +680,41 @@ class AgenteComprasNesta:
             logging.exception("Error descargando solo PDF de UCFE:")
         return None
 
-    def llamar_ia(self, prompt_text, json_mode=True, attachments=None):
+    def llamar_ia(self, prompt_text, json_mode=True, attachments=None, is_retry=False):
         from google.genai import types
         parts = [prompt_text]
         if attachments:
             for att in attachments:
                 if att.get('datas') and ('image' in att['mimetype'] or 'pdf' in att['mimetype'] or 'xml' in att['mimetype']):
                     parts.append(types.Part.from_bytes(data=base64.b64decode(att['datas']), mime_type=att['mimetype'] if 'xml' not in att['mimetype'] else 'text/plain'))
-        res = self.client.models.generate_content(model=self.model_name, contents=parts, config=types.GenerateContentConfig(candidate_count=1, response_mime_type="application/json" if json_mode else "text/plain"))
+        
+        # Aumentamos explícitamente el límite de tokens de salida a 8192 para evitar truncamientos
+        res = self.client.models.generate_content(
+            model=self.model_name, 
+            contents=parts, 
+            config=types.GenerateContentConfig(
+                candidate_count=1, 
+                max_output_tokens=8192,
+                response_mime_type="application/json" if json_mode else "text/plain"
+            )
+        )
+        
         u = res.usage_metadata
         logging.info(f"📊 TOKENS: In: {u.prompt_token_count} | Out: {u.candidates_token_count} | Total: {u.total_token_count}")
         
         response_text = res.text
         if json_mode:
-            # Limpieza quirúrgica de bloques Markdown (Fix 09/06)
             response_text = re.sub(r'```json\s?|\s?```', '', response_text).strip()
             try:
                 return json.loads(response_text)
             except Exception as e:
-                logging.error(f"❌ Error parseando JSON de la IA: {e}. Respuesta cruda: {response_text}")
-                return {}
+                if not is_retry:
+                    logging.warning(f"⚠️ Error parseando JSON de IA ({e}). Iniciando mecanismo de auto-curación (Auto-Healing)...")
+                    prompt_correccion = f"El siguiente texto debía ser un JSON válido pero tiene errores de formato. Por favor, NO cambies absolutamente nada de la información ni de los textos de análisis, simplemente arréglale el formato (llaves, comas, comillas) para que sea un JSON 100% válido.\n\nTEXTO ROTO:\n{response_text}"
+                    return self.llamar_ia(prompt_correccion, json_mode=True, is_retry=True)
+                else:
+                    logging.error(f"❌ Fallo crítico de auto-curación JSON: {e}. Respuesta cruda final: {response_text}")
+                    return {}
         return response_text
 
     def _obtener_fecha_pago_real(self, target_id, is_payment):
