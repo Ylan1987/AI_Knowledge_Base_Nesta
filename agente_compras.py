@@ -751,7 +751,7 @@ class AgenteComprasNesta:
             return False
 
         catalog_json = json.dumps(self.odoo.env['product.product'].search_read([('purchase_ok', '=', True)], ['id', 'name'], limit=500), separators=(',', ':'))
-        accounts_json = json.dumps(self.odoo.env['account.account'].search_read([('account_type', '=', 'expense')], ['id', 'name', 'code'], limit=500), separators=(',', ':'))
+        accounts_json = json.dumps(self.odoo.env['account.account'].search_read([('account_type', 'in', ('expense', 'expense_direct_cost'))], ['id', 'name', 'code'], limit=500), separators=(',', ':'))
         with open('PROMPT_AGENTE_COMPRAS.md', 'r', encoding='utf-8') as f: p_m = f.read()
 
         prompt_init = f"{p_m}\nCatálogo de Productos: {catalog_json}\nCatálogo de Cuentas de Gasto: {accounts_json}\nExtrae los datos básicos y líneas de este documento."
