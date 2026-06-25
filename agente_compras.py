@@ -181,7 +181,13 @@ class AgenteComprasNesta:
                 alertas.append(f"No se pudo determinar el diario de pago preferido, se usará el por defecto. ({str(e)})")
 
             if not journal_id:
-                journal_id = 9 if datos_factura.get('moneda') == 'UYU' else 10
+                journal_code = 'UYU' if datos_factura.get('moneda') == 'UYU' else 'USD'
+                j_ids = self.odoo.env['account.journal'].search([('code', '=', journal_code)], limit=1)
+                if j_ids:
+                    journal_id = j_ids[0]
+                else:
+                    journal_id = 9 if journal_code == 'UYU' else 10
+                    alertas.append(f"Aviso: Se usó el diario fijo ({journal_id}) porque no se encontró un diario con código {journal_code}.")
 
             df = ai_datos.get('datos_factura', {})
             pay_date = (df.get('fecha_pago_sugerida') or datos_factura['fecha_factura'])[:10]

@@ -53,6 +53,8 @@ class AgenteVentasNesta:
     """
     Agente de Ventas 100% Autónomo (IA Real + Odoo + RAG + Memoria de Ciclo de Vida).
     """
+    _cached_schema = None
+
     def __init__(self, ticket_id):
         self.ticket_id = ticket_id
         self.odoo = None
@@ -84,8 +86,10 @@ class AgenteVentasNesta:
             client = chromadb.PersistentClient(path='chroma_db_clean')
             self.chroma_collection = client.get_or_create_collection("sabiduria_comercial")
             
-        with open('products_schema.json', 'r', encoding='utf-8') as f:
-            self.products_schema = json.load(f)
+        if AgenteVentasNesta._cached_schema is None:
+            with open('products_schema.json', 'r', encoding='utf-8') as f:
+                AgenteVentasNesta._cached_schema = json.load(f)
+        self.products_schema = AgenteVentasNesta._cached_schema
 
     def _get_chatter_history(self, model, res_id):
         messages = self.odoo.env['mail.message'].search_read(
