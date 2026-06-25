@@ -91,6 +91,24 @@ class AgenteVentasNesta:
                 AgenteVentasNesta._cached_schema = json.load(f)
         self.products_schema = AgenteVentasNesta._cached_schema
 
+    def _clean_html_text(self, html_text):
+        if not html_text: return ""
+        import html2text
+        import re
+        h = html2text.HTML2Text()
+        h.ignore_links = True
+        h.ignore_images = True
+        h.body_width = 0
+        body = h.handle(html_text)
+        body = re.split(r'El \d{1,2}.*?escribió:', body)[0]
+        body = re.split(r'El \w{3}, \d{1,2} de \w{3}.*?escribió:', body)[0]
+        body = re.split(r'\nDe: .*?\nEnviado:', body)[0]
+        body = re.split(r'\nFrom: .*?\nSent:', body)[0]
+        body = re.split(r'________________________________', body)[0]
+        body = re.split(r'-- \n', body)[0]
+        body = re.sub(r'\n{3,}', '\n\n', body).strip()
+        return body
+
     def _get_chatter_history(self, model, res_id):
         messages = self.odoo.env['mail.message'].search_read(
             [('res_id', '=', res_id), ('model', '=', model)],
@@ -98,25 +116,9 @@ class AgenteVentasNesta:
             order='id asc'
         )
         
-        import re
         for m in messages:
             if m['body']:
-                # 1. Reemplazar <br> y <p> por saltos de línea reales
-                body = m['body'].replace('<br>', '\n').replace('<br/>', '\n').replace('</p>', '\n')
-                # 2. Eliminar todos los tags HTML restantes
-                body = re.sub(r'<[^>]+>', '', body)
-                # 3. Limpiar HTML entities
-                body = body.replace('&nbsp;', ' ').replace('&amp;', '&').replace('&gt;', '>').replace('&lt;', '<')
-                # 4. Remover colas de correos (estilo Gmail/Outlook)
-                body = re.split(r'El \d{1,2}.*?escribió:', body)[0]
-                body = re.split(r'El \w{3}, \d{1,2} de \w{3}.*?escribió:', body)[0]
-                body = re.split(r'\nDe: .*?\nEnviado:', body)[0]
-                body = re.split(r'\nFrom: .*?\nSent:', body)[0]
-                body = re.split(r'________________________________', body)[0]
-                body = re.split(r'-- \n', body)[0]
-                # 5. Limpiar espacios múltiples
-                body = re.sub(r'\n{3,}', '\n\n', body).strip()
-                m['body'] = body
+                m['body'] = self._clean_html_text(m['body'])
                 
         return messages
 
@@ -198,20 +200,9 @@ class AgenteVentasNesta:
             limit=50, order='date desc'
         )
         
-        import re
         for m in prev_messages:
             if m['body']:
-                body = m['body'].replace('<br>', '\n').replace('<br/>', '\n').replace('</p>', '\n')
-                body = re.sub(r'<[^>]+>', '', body)
-                body = body.replace('&nbsp;', ' ').replace('&amp;', '&').replace('&gt;', '>').replace('&lt;', '<')
-                body = re.split(r'El \d{1,2}.*?escribió:', body)[0]
-                body = re.split(r'El \w{3}, \d{1,2} de \w{3}.*?escribió:', body)[0]
-                body = re.split(r'\nDe: .*?\nEnviado:', body)[0]
-                body = re.split(r'\nFrom: .*?\nSent:', body)[0]
-                body = re.split(r'________________________________', body)[0]
-                body = re.split(r'-- \n', body)[0]
-                body = re.sub(r'\n{3,}', '\n\n', body).strip()
-                m['body'] = body
+                m['body'] = self._clean_html_text(m['body'])
         
         return {
             "cliente_principal": {
