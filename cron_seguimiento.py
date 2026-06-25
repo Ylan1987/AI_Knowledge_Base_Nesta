@@ -16,9 +16,9 @@ class CronSeguimiento:
     """
     def __init__(self):
         self.odoo = None
-        self.host = 'prod17.odoo.imprentadiagonal.com.uy'
-        self.db = 'odoo17_prod'
-        self.user = 'ylan.archimowicz@imprentadiagonal.com.uy'
+        self.host = os.getenv('ODOO_HOST', 'prod17.odoo.imprentadiagonal.com.uy')
+        self.db = os.getenv('ODOO_DB', 'odoo17_prod')
+        self.user = os.getenv('ODOO_USER', 'ylan.archimowicz@imprentadiagonal.com.uy')
         self.password = os.getenv('ODOO_PASSWORD', '9a50ca725dd8c0e451e8005982589dcdf3bf8fe7')
         self.odoo = None
         # AI Config (Vertex AI Enterprise)
