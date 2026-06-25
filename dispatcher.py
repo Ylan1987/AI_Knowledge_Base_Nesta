@@ -53,14 +53,14 @@ class DispatcherNesta:
         # ==========================================
         # 🚩 BANDERAS DE CONTROL (FEATURE FLAGS)
         # ==========================================
-        self.RUN_UCFE = True
-        self.RUN_ZOHO = True
-        self.RUN_TICKETS_COMPRAS = True
-        self.RUN_TICKETS_VENTAS = False
-        self.RUN_TICKETS_OTROS = False
-        self.RUN_CRM = False
-        self.RUN_RESPUESTAS = True
-        self.RUN_PROACTIVIDAD = False
+        self.RUN_UCFE = os.getenv('RUN_UCFE', 'True').lower() == 'true'
+        self.RUN_ZOHO = os.getenv('RUN_ZOHO', 'True').lower() == 'true'
+        self.RUN_TICKETS_COMPRAS = os.getenv('RUN_TICKETS_COMPRAS', 'True').lower() == 'true'
+        self.RUN_TICKETS_VENTAS = os.getenv('RUN_TICKETS_VENTAS', 'False').lower() == 'true'
+        self.RUN_TICKETS_OTROS = os.getenv('RUN_TICKETS_OTROS', 'False').lower() == 'true'
+        self.RUN_CRM = os.getenv('RUN_CRM', 'False').lower() == 'true'
+        self.RUN_RESPUESTAS = os.getenv('RUN_RESPUESTAS', 'True').lower() == 'true'
+        self.RUN_PROACTIVIDAD = os.getenv('RUN_PROACTIVIDAD', 'False').lower() == 'true'
         # ==========================================
 
         self.host = 'prod17.odoo.imprentadiagonal.com.uy'
