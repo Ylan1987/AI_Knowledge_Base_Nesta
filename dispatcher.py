@@ -14,7 +14,8 @@ load_dotenv()
 
 # Parche de Seguridad Docker (QNAP) - Validado 09/06
 if not os.getenv('GOOGLE_APPLICATION_CREDENTIALS'):
-    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/app/gcloud_credentials.json'
+    if os.path.exists('/app/gcloud_credentials.json'):
+        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/app/gcloud_credentials.json'
 
 os.environ['GOOGLE_CLOUD_PROJECT'] = 'project-6966617c-3e1f-4ae1-91c'
 
@@ -81,20 +82,20 @@ class DispatcherNesta:
 
     def _init_dispatcher_db(self):
         """Inicializa la tabla local para el tracking de leads del CRM (independiente de los tickets)."""
-        conn = sqlite3.connect('agent_state.db')
+        conn = sqlite3.connect(os.getenv('AGENT_STATE_DB', 'agent_state.db'))
         conn.execute('''CREATE TABLE IF NOT EXISTS dispatcher_lead_state 
                         (lead_id INTEGER PRIMARY KEY, last_message_id INTEGER, last_processed_at TIMESTAMP)''')
         conn.commit()
         conn.close()
 
     def get_last_processed_lead_id(self, lead_id):
-        conn = sqlite3.connect('agent_state.db')
+        conn = sqlite3.connect(os.getenv('AGENT_STATE_DB', 'agent_state.db'))
         res = conn.execute("SELECT last_message_id FROM dispatcher_lead_state WHERE lead_id = ?", (lead_id,)).fetchone()
         conn.close()
         return res[0] if res else 0
 
     def set_last_processed_lead_id(self, lead_id, message_id):
-        conn = sqlite3.connect('agent_state.db')
+        conn = sqlite3.connect(os.getenv('AGENT_STATE_DB', 'agent_state.db'))
         conn.execute("INSERT OR REPLACE INTO dispatcher_lead_state (lead_id, last_message_id, last_processed_at) VALUES (?, ?, CURRENT_TIMESTAMP)", 
                      (lead_id, message_id))
         conn.commit()
@@ -269,7 +270,7 @@ class DispatcherNesta:
         if self.RUN_RESPUESTAS:
             logging.info("🔎 [5/6] Escaneando respuestas en Tickets y CRM (Seguimiento DB)...")
             try:
-                conn = sqlite3.connect('agent_state.db')
+                conn = sqlite3.connect(os.getenv('AGENT_STATE_DB', 'agent_state.db'))
                 
                 # A. SEGUIMIENTO DE TICKETS
                 active_tickets = conn.execute("SELECT ticket_id, last_message_id FROM flow_state").fetchall()

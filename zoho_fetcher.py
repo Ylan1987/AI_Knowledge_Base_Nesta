@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class ZohoFetcher:
-    def __init__(self, db_path='agent_state.db'):
+    def __init__(self, db_path=os.getenv('AGENT_STATE_DB', 'agent_state.db')):
         self.imap_url = 'imap.zoho.com'
         self.user = os.getenv('ZOHO_USER')
         self.password = os.getenv('ZOHO_PASSWORD')

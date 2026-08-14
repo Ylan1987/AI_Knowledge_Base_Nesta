@@ -21,7 +21,8 @@ def reprocesar_uid_zoho(uid_str):
     
     # Borrar de la caché de Zoho para forzar la lectura
     try:
-        conn = sqlite3.connect('agent_state.db')
+        import os
+        conn = sqlite3.connect(os.getenv('AGENT_STATE_DB', 'agent_state.db'))
         conn.execute("DELETE FROM processed_uids WHERE uid = ?", (str(uid_str),))
         conn.commit()
         conn.close()

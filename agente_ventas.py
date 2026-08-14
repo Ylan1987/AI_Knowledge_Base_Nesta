@@ -19,7 +19,7 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class AgentState:
-    def __init__(self, db_path='agent_state.db'):
+    def __init__(self, db_path=os.getenv('AGENT_STATE_DB', 'agent_state.db')):
         self.db_path = db_path
         self._init_db()
 
