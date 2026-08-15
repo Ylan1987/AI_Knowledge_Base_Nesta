@@ -16,14 +16,16 @@ load_dotenv()
 
 # Parche de Seguridad Docker (QNAP) - Validado 09/06
 if not os.getenv('GOOGLE_APPLICATION_CREDENTIALS'):
-    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/app/gcloud_credentials.json'
+    if os.path.exists('/app/gcloud_credentials.json'):
+        os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/app/gcloud_credentials.json'
 
 os.environ['GOOGLE_CLOUD_PROJECT'] = 'project-6966617c-3e1f-4ae1-91c'
 
 # Configuración de Logs Verbose
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-DB_NAME = 'agent_state.db'
+import os
+DB_NAME = os.getenv('AGENT_STATE_DB', 'agent_state.db')
 
 class AgenteComprasNesta:
     """
@@ -388,13 +390,18 @@ class AgenteComprasNesta:
             self.odoo.env['mail.message'].create({'model': 'account.payment', 'res_id': pay['id'], 'body': msg, 'message_type': 'comment', 'attachment_ids': [(6, 0, att_ids)]})
             self._crear_actividad_atc(pay['id'], 'account.payment', f"Auditar Recibo {datos_factura['numero_factura']}", "Validar que el comprobante adjunto corresponda a este pago.")
             self._update_doc_state(str(datos_factura.get('rut', '')), str(datos_factura.get('tipo_cfe', '')), str(datos_factura.get('serie', '')), str(datos_factura.get('numero', '')), xml_ok=True, move_id=pay['id'])
-            return f"✅ Recibo {datos_factura['numero_factura']} vinculado al pago {pay['name']}."
+            return pay['id']
         else:
             self._update_doc_state(str(datos_factura.get('rut', '')), str(datos_factura.get('tipo_cfe', '')), str(datos_factura.get('serie', '')), str(datos_factura.get('numero', '')), xml_ok=True, move_id=None)
-            msg = f"⚠️ <b>ALERTA DE COBRANZA HUÉRFANA</b><br>Se recibió el recibo <b>{datos_factura['numero_factura']}</b> por <b>${monto:.2f}</b>, pero NO se encontró un pago coincidente (mismo monto y fecha ±5 días) en Odoo para este proveedor.<br><br>Por favor, procesar y vincular manualmente.<br><br><b>🆘 AUXILIO:</b>{menciones}"
-            self.odoo.env['mail.message'].create({'model': 'res.partner', 'res_id': partner_id, 'body': msg, 'message_type': 'comment'})
+            msg = f"⚠️ <b>ALERTA DE COBRANZA HUÉRFANA</b><br>Se recibió el recibo <b>{datos_factura['numero_factura']}</b> por <b>${monto:.2f}</b>, pero NO se encontró un pago coincidente (mismo monto y fecha ±5 días) en Odoo para este proveedor.<br><br>Por favor, procesar y vincular manualmente.<br><br><b>🚨 AUXILIO:</b>{menciones}"
+            
+            # Subir adjuntos al partner
+            att_vals = [{'name': a['name'], 'datas': a['datas'], 'res_model': 'res.partner', 'res_id': partner_id, 'type': 'binary'} for a in attachments if 'pdf' in a['mimetype'] or 'xml' in a['mimetype']]
+            att_ids = self.odoo.env['ir.attachment'].create(att_vals) if att_vals else []
+            
+            self.odoo.env['mail.message'].create({'model': 'res.partner', 'res_id': partner_id, 'body': msg, 'message_type': 'comment', 'attachment_ids': [(6, 0, att_ids)]})
             self._crear_actividad_atc(partner_id, 'res.partner', f"Vincular Recibo {datos_factura['numero_factura']}", f"Llegó un recibo por ${monto:.2f} que no encontró pago automático.")
-            return "⚠️ Pago no encontrado para cobranza. Se alertó al equipo ATC en el proveedor."
+            return None
 
     def _get_atc_mentions(self):
         deps = self.odoo.env['hr.department'].search(['|', ('name', 'ilike', 'Admin'), ('name', 'ilike', 'ATC')], limit=100)
@@ -456,11 +463,12 @@ class AgenteComprasNesta:
         if alertas is None: alertas = []
         """Mapeo dinámico de IndFact a Tax ID y Tasa (DGI Standard)."""
         ind = str(ind)
-        if ind == '3': return 1, 0.22      # Tasa Básica
-        if ind == '2': return 2, 0.10      # Tasa Mínima
-        if ind in ('1', '6', '7'): return 7, 0.0 # Exento / No Gravado
+        if ind == '3': return 4, 0.22      # Tasa Básica (IVA Compras 22%)
+        if ind == '2': return 5, 0.10      # Tasa Mínima (IVA Compras 10%)
+        if ind == '1': return 6, 0.0       # Exento de IVA (Compras Exentos IVA)
+        if ind in ('6', '7'): return 7, 0.0 # Producto/servicio no facturable (No Tributa - Compras)
         alertas.append(f"Código de impuesto desconocido '{ind}'. Se forzó a Exento por seguridad.")
-        return 7, 0.0
+        return 6, 0.0
 
     def _upsert_factura(self, partner_id, datos_factura, lineas_ia, attachments, source_type='XML', ctx=None, reasoning=None, existing_bill_id=None):
         reason_data = reasoning.get('analisis_contexto', {}) if isinstance(reasoning, dict) else {}
@@ -794,7 +802,7 @@ class AgenteComprasNesta:
                 logging.info(f"⏭️ El documento {serie}-{nro} de {rut} ya fue procesado previamente. Solo vinculamos al ticket.")
                 
                 # --- RESCATE DE PDF DESDE TICKETS (Como en Zoho) ---
-                target_id = doc_state['odoo_move_id']
+                target_id = int(doc_state['odoo_move_id']) if str(doc_state.get('odoo_move_id', '')).isdigit() else doc_state.get('odoo_move_id')
                 target_model = 'account.payment' if is_resguardo else 'account.move'
                 
                 if not is_resguardo:
@@ -885,7 +893,7 @@ class AgenteComprasNesta:
                 pdf_atts = [a for a in email_data['attachments'] if 'pdf' in a['name'].lower()]
                 if pdf_atts and not doc_state['pdf_proveedor_ok']:
                     target_model = 'account.move'
-                    target_id = doc_state['odoo_move_id']
+                    target_id = int(doc_state['odoo_move_id']) if str(doc_state.get('odoo_move_id', '')).isdigit() else doc_state.get('odoo_move_id')
                     
                     tipo_cfe_str = str(d.get('tipo_cfe', ''))
                     # Si es Resguardo (182, 282), el target_id guardado podría ser nulo si se archivó en el partner, o ser el ID del pago
